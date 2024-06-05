@@ -1,0 +1,20 @@
+CRITICAL - 2024-04-17 20:40:12 --> Malformed UTF-8 characters, possibly incorrectly encoded. filename: "/www/wwwroot/thcsdaoduytu.edu.vn/app/Controllers/成成.php"
+in SYSTEMPATH/Autoloader/Autoloader.php on line 354.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): CodeIgniter\Autoloader\Autoloader->sanitizeFilename()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-17 20:40:26 --> Malformed UTF-8 characters, possibly incorrectly encoded. filename: "/www/wwwroot/thcsdaoduytu.edu.vn/app/Controllers/成成.php"
+in SYSTEMPATH/Autoloader/Autoloader.php on line 354.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): CodeIgniter\Autoloader\Autoloader->sanitizeFilename()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
