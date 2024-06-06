@@ -8,7 +8,7 @@
         }
     }
     if (!empty($adCodes)):
-        if (strTrim($adCodes->ad_code_desktop) != ''):?>
+        if (strTrim($adCodes->ad_code_desktop) != ''): ?>
             <div class="col-sm-12 col-xs-12 col-bn-ds<?= isset($class) ? ' ' . $class : ''; ?>">
                 <div class="row">
                     <div class="bn-content<?= $adSpace == 'sidebar_1' || $adSpace == 'sidebar_2' ? ' bn-sidebar-content' : ''; ?>">
@@ -18,8 +18,10 @@
                     </div>
                 </div>
             </div>
-        <?php endif;
-        if (strTrim($adCodes->ad_code_mobile) != ''): ?>
+        <?php
+            endif;
+            if (strTrim($adCodes->ad_code_mobile) != ''):
+        ?>
             <div class="col-sm-12 col-xs-12 col-bn-mb<?= isset($class) ? ' ' . $class : ''; ?>">
                 <div class="row">
                     <div class="bn-content">
@@ -29,6 +31,8 @@
                     </div>
                 </div>
             </div>
-        <?php endif;
+        <?php
+        endif;
     endif;
-endif; ?>
+endif;
+?>

@@ -2,7 +2,8 @@
     <div class="container-xl">
         <div class="row">
             <!-- <div class="col-md-12 col-lg-6 col-featured-left"> -->
-            <div class="col-9 col-featured-left3">
+            <!-- <div class="col-md-12 col-lg-9 col-featured-left"> -->
+            <div class="col-12 col-featured-left3">
                 <div class="main-slider-container">
                     <div class="main-slider" id="main-slider">
                         <?php $count = 0;
@@ -52,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 col-featured-right">
+            <div hidden class="col-3 col-featured-right">
                 <div class="row">
                     <?php $i = 0;
                     if (!empty($featuredPosts)):
@@ -92,7 +93,7 @@
                     endif; ?>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-3 top-headlines">
+            <div hidden class="col-md-12 col-lg-3 top-headlines">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="top-headlines-title"><?= trans("top_headlines"); ?></h3>
