@@ -1,8 +1,8 @@
 <?php $limit = 15;
 $categoryPosts = getPostsByCategoryId($category->id, $baseCategories, $baseLatestCategoryPosts); ?>
-<section class="section section-cat-slider">
+<section class="section section-cat-slider"  id="<?= esc($category->name_slug); ?>">
     <div class="container-xl">
-        <div class="section-title">
+        <div class="section-title" >
             <div class="d-flex justify-content-between align-items-center">
                 <h3 class="title"><?= esc($category->name); ?></h3>
                 <div id="category_slider_nav_<?= $category->id; ?>" class="nav-sm-buttons">

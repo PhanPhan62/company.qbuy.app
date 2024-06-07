@@ -25,13 +25,14 @@
         </div>
     </section>
 <?php endif;
-if ($generalSettings->show_featured_section == 1):
+// if ($generalSettings->show_featured_section == 1):
     if ($activeTheme->theme == 'news'):
         echo view('themes/news/partials/_main_slider');
     else:
         echo loadView('partials/_main_slider');
+        // echo loadView('partials/_slider_index');
     endif;
-endif;
+// endif;
 $catSliderIds = array();
 $i = 0;
 if (!empty($baseCategories)):

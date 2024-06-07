@@ -1,7 +1,11 @@
 <?php if (!empty($subCategories)): ?>
 <ul class="nav nav-tabs nav-category-block" role="tablist">
-    <li class="nav-item category-block-links"><a href="javascript:void(0)" class="nav-link active" data-bs-toggle="tab"
-            data-bs-target="#tabCategoryAll<?= esc($category->id); ?>"><?= trans("all"); ?></a></li>
+    <li class="nav-item category-block-links">
+        <a href="javascript:void(0)" class="nav-link active" data-bs-toggle="tab"
+            data-bs-target="#tabCategoryAll<?= esc($category->id); ?>">
+            <?= trans("all"); ?>
+        </a>
+    </li>
     <?php $i = 0;
         if (!empty($subCategories)):
             foreach ($subCategories as $subCategory):
