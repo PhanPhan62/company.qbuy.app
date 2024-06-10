@@ -1629,12 +1629,18 @@ if (!function_exists('getCategoryByID')) {
     }
 }
 // get by id and parent_id
-if (!function_exists('getCategoryByIDChild')) {
-    function getCategoryByIDChild( $parent_id)
+// if (!function_exists('getCategoryByIDChild')) {
+//     function getCategoryByIDChild($parent_id)
+//     {
+//         $model = new \App\Models\CategoryModel();
+//         return $model->getCategoryByIDChild($parent_id);
+//     }
+// }
+if (!function_exists('getByParentId')) {
+    function getByParentId($parent_id)
     {
         $model = new \App\Models\CategoryModel();
-        return $model->getCategoryByIDChild($parent_id);
-        
+        return $model->getByParentId($parent_id);
     }
 }
 

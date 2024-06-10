@@ -156,11 +156,18 @@ class CategoryModel extends BaseModel
         $this->buildQuery();
         return $this->builder->where('id')->get()->getRow();
     }
-    public function getCategoryByIDChild($parent_id)
+    // public function getCategoryByIDChild($parent_id)
+    // {
+    //     $this->buildQuery();
+    //     return $this->builder->where('parent_id', $parent_id)->get()->getRow();
+    //     // return $this->builder->where('categories.parent_id', cleanNumber($parent_id))->orderBy('category_order')->get()->getResult();    
+    // }
+
+    public function getByParentId($parentId)
     {
         $this->buildQuery();
-        return $this->builder->where('parent_id', $parent_id)->get()->getRow();
-        // return $this->builder->orderBy('category_order')->get()->getResult();
+        $this->builder->where('parent_id', $parentId);
+        return $this->builder->get()->getResult();
     }
 
     //get category by slug

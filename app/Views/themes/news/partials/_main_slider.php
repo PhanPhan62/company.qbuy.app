@@ -133,7 +133,8 @@
     <?php 
         $number=75;
         $category = getCategoryByID($number);
-        $categoryChild = getCategoryByIDChild($number);
+        // $categoryChild = getCategoryByIDChild($number);
+         $categories = getByParentId($number);
     ?>
     <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
     <div class="row" id="row-1684178115">
@@ -162,33 +163,29 @@
         </div>
     </div>
     <div class="row row-small align-equal align-center" id="row-1536974310">
+    <?php foreach($categories as $item): ?>
         <div class="col col-12 col-md-3 medium-3 small-6 large-3 service">
             <div class="col-inner text-center dark"
-                style="background-color: <?= esc($category->color) ?>;padding:50px 0px 50px 0px">
-                <?php if ($category->parent_id == 0 || $category->parent_id=null):?>
-                    <a class="plain" href="<?= esc($category->name_slug) ?>/<?= esc($categoryChild->name_slug) ?>"
-                        target="_self">
-                        <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                            
-                            <div class="icon-box-text last-reset">
+                style="background-color: <?php echo esc($item->color); ?>;padding:50px 0px 50px 0px">
+                <a class="plain" href="<?= esc($category->name_slug) ?>/<?php echo esc($item->name_slug); ?>"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
 
-                                <h3 style="text-align: center; color: #fff"><?= esc($categoryChild->name) ?></h3>
-                            </div>
-
-                            <style scope="scope">
-                                .service{
-                                    margin-top:20px 
-                                }
-                            </style>
+                            <h3 style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
                         </div>
-                    </a>
-                <?php else: ?>
 
-               
-                <?php endif; ?>
-
+                        <style scope="scope">
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                </a>
             </div>
         </div>
+        <?php endforeach; ?>
     </div>
     <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
 </div>
