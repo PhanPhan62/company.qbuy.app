@@ -1620,6 +1620,24 @@ if (!function_exists('getCategories')) {
     }
 }
 
+// get by id
+if (!function_exists('getCategoryByID')) {
+    function getCategoryByID($id)
+    {
+        $model = new \App\Models\CategoryModel();
+        return $model->getCategoryByID($id);
+    }
+}
+// get by id and parent_id
+if (!function_exists('getCategoryByIDChild')) {
+    function getCategoryByIDChild( $parent_id)
+    {
+        $model = new \App\Models\CategoryModel();
+        return $model->getCategoryByIDChild($parent_id);
+        
+    }
+}
+
 //get categories
 if (!function_exists('getCategoriesByLang')) {
     function getCategoriesByLang($langId)

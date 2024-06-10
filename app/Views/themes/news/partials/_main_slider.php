@@ -130,13 +130,18 @@
 </section> 
 
 <div class="container-xl section-content relative">
+    <?php 
+        $number=75;
+        $category = getCategoryByID($number);
+        $categoryChild = getCategoryByIDChild($number);
+    ?>
     <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
     <div class="row" id="row-1684178115">
         <div class="col small-12 large-12">
             <div class="col-inner text-center">
-                <h1>DỊCH VỤ - TƯ VẤN</h1>
+                <h1><?= esc($category->name) ?></h1>
                 <p>
-                    <span style="color: #777">Chúng tôi tự hào là một trong những doanh nghiệp trong lĩnh vực nhà đất hàng đầu Việt Nam </span>
+                    <span style="color: #777"><?= esc($category->description) ?></span>
                 </p>
                 <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_263776288">
                     <div class="img-inner dark">
@@ -159,23 +164,28 @@
     <div class="row row-small align-equal align-center" id="row-1536974310">
         <div class="col col-12 col-md-3 medium-3 small-6 large-3 service">
             <div class="col-inner text-center dark"
-                style="background-color:rgb(0, 128, 0);padding:50px 0px 50px 0px">
-                <a class="plain" href="https://company.qbuy.app/dich-vu-tu-van-1/djia-chinh"
-                    target="_self">
-                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                        
-                        <div class="icon-box-text last-reset">
+                style="background-color: <?= esc($category->color) ?>;padding:50px 0px 50px 0px">
+                <?php if ($category->parent_id == 0 || $category->parent_id=null):?>
+                    <a class="plain" href="<?= esc($category->name_slug) ?>/<?= esc($categoryChild->name_slug) ?>"
+                        target="_self">
+                        <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                            
+                            <div class="icon-box-text last-reset">
 
-                            <h3 style="text-align: center; color: #fff">Dịch vụ đất đai</h3>
+                                <h3 style="text-align: center; color: #fff"><?= esc($categoryChild->name) ?></h3>
+                            </div>
+
+                            <style scope="scope">
+                                .service{
+                                    margin-top:20px 
+                                }
+                            </style>
                         </div>
+                    </a>
+                <?php else: ?>
 
-                        <style scope="scope">
-                            .service{
-                                margin-top:20px 
-                            }
-                        </style>
-                    </div>
-                </a>
+               
+                <?php endif; ?>
 
             </div>
         </div>
