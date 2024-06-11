@@ -80,7 +80,7 @@ if ($darkMode == true) : ?>
 
 <body class="<?= $activeTheme->theme; ?>">
     <?= loadView('nav/_nav_top'); ?>
-    <header id="header" <?= isset($headerNoMargin) ? 'class="mb-0"' : ''; ?>>
+    <header id="header"style="margin-bottom:0px;" <?= isset($headerNoMargin) ? 'class="mb-0"' : ''; ?>>
         <?= loadView('nav/_nav_main'); ?>
         <?= loadView('nav/_nav_mobile'); ?>
     </header>

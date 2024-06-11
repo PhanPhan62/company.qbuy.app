@@ -9,7 +9,6 @@
             </div>
             
         </h5>
-        
         <style>
             .QText{
                 color: #0000ff;
@@ -23,7 +22,6 @@
                 white-space: nowrap;
                 border-right: 2px solid #7E2EA0;
                 animation: typing 5s steps(35, end), cursor .5s steps(33, end) infinite;
-                /* animation: typing 10s steps(20, end) infinite, cursor 10s step-end infinite; */
                 text-transform: uppercase;
             }
 

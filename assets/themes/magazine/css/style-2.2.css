@@ -460,7 +460,7 @@ h6,
 # Header
 --------------------------------------------------------------*/
 #header {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background-color: #fff;
 }
 

@@ -3,7 +3,15 @@ body {
     color: #eee !important;
 }
 
-a, label, h1, h2, h3, h4, h5, h6, strong {
+a,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
     color: #eee;
 }
 
@@ -15,7 +23,10 @@ iframe {
     border: 0 !important;
 }
 
-.form-group input, .form-group input:invalid, .form-group input:valid, textarea {
+.form-group input,
+.form-group input:invalid,
+.form-group input:valid,
+textarea {
     background: #272727 !important;
     border: 1px solid #2D2D2D !important;
     color: #eee !important;
@@ -26,15 +37,16 @@ iframe {
     border: #000 !important;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu>li>a {
     color: #eee !important;
 }
 
-.dropdown-menu > li > a:hover {
+.dropdown-menu>li>a:hover {
     background-color: #1c1c1c;
 }
 
-.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     background-color: #1c1c1c !important;
 }
 
@@ -42,11 +54,12 @@ iframe {
     color: #666;
 }
 
-.breadcrumb .breadcrumb-item a, .breadcrumb .breadcrumb-item span {
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item span {
     color: #666;
 }
 
-.breadcrumb > li + li::before {
+.breadcrumb>li+li::before {
     color: #666;
 }
 
@@ -147,11 +160,13 @@ iframe {
     border-top: 1px solid #161616;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: #fbfbfb !important;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     background-color: #161616;
 }
 
@@ -181,11 +196,11 @@ iframe {
     background-color: #1c1c1c;
 }
 
-.dropdown-more > li {
+.dropdown-more>li {
     border-bottom: 1px solid #1c1c1c;
 }
 
-.dropdown-more > li > ul > li {
+.dropdown-more>li>ul>li {
     border-bottom: 1px solid #1c1c1c;
 }
 
@@ -198,12 +213,16 @@ iframe {
     background-color: #1c1c1c;
 }
 
-.section .nav-tabs > li.active > a, .section .nav-tabs > li.active > a:focus, .section .nav-tabs > li.active > a:hover {
+.section .nav-tabs>li.active>a,
+.section .nav-tabs>li.active>a:focus,
+.section .nav-tabs>li.active>a:hover {
     background-color: transparent !important;
     color: #fbfbfb;
 }
 
-.section .nav-tabs > li > a:focus, .section .nav-tabs > li > a:hover, .section .nav-tabs > li > a:active {
+.section .nav-tabs>li>a:focus,
+.section .nav-tabs>li>a:hover,
+.section .nav-tabs>li>a:active {
     background-color: transparent !important;
     color: #fbfbfb;
 }
@@ -214,7 +233,7 @@ iframe {
     color: #eee;
 }
 
-.section .nav-tabs > li > a {
+.section .nav-tabs>li>a {
     color: #a0a0a0;
 }
 
@@ -241,11 +260,12 @@ iframe {
     color: #fbfbfb !important;
 }
 
-.widget-popular-posts .tab-content .loader-popular-posts .spinner > div {
+.widget-popular-posts .tab-content .loader-popular-posts .spinner>div {
     background-color: #bcbcbc;
 }
 
-.small-post-meta span, .small-post-meta a {
+.small-post-meta span,
+.small-post-meta a {
     color: #a0a0a0;
 }
 
@@ -350,7 +370,8 @@ iframe {
     background-color: #272727;
 }
 
-.profile-tabs .nav .nav-link:hover, .profile-tabs .nav .nav-link:focus {
+.profile-tabs .nav .nav-link:hover,
+.profile-tabs .nav .nav-link:focus {
     background-color: #272727;
 }
 
@@ -565,11 +586,12 @@ div#amplitude-right div.song div.song-meta-data span.song-title {
     color: #eee !important;
 }
 
-.table > thead > tr > th {
+.table>thead>tr>th {
     border-bottom: 2px solid #373737;
 }
 
-.table-striped td, .table-striped th {
+.table-striped td,
+.table-striped th {
     border-top: 1px solid #313131 !important;
 }
 
@@ -633,13 +655,18 @@ div#amplitude-right div.song div.song-meta-data span.song-title {
     color: #eee !important;
 }
 
-.nav-mobile .profile-dropdown .dropdown-menu > li > a {
+.nav-mobile .profile-dropdown .dropdown-menu>li>a {
     color: #eee !important;
 }
 
 .quiz-container .question-answers .answer-format-text .progress .progress-bar {
     background-color: #2C2C2C !important;
 }
+
 .post-content .post-text table tr:nth-child(2n) {
     background-color: transparent !important;
+}
+
+.ulListService .listService {
+    color: #222222 !important;
 }

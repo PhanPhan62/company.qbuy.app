@@ -76,7 +76,7 @@ if ($generalSettings->pwa_status == 1): ?>
 <?= $generalSettings->custom_header_codes; ?>
 </head>
 <body>
-<header id="header">
+<header id="header" style="margin-bottom:0px;">
 <?= loadView('nav/_nav_top'); ?>
 <div class="logo-banner">
 <div class="container">

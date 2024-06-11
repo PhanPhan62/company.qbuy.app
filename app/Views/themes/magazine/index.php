@@ -25,14 +25,28 @@
         </div>
     </section>
 <?php endif;
-// if ($generalSettings->show_featured_section == 1):
+
+// Chỗ chỉnh ẩn hiện slide
+if ($generalSettings->show_featured_section == 1):
     if ($activeTheme->theme == 'news'):
         echo view('themes/news/partials/_main_slider');
     else:
         echo loadView('partials/_main_slider');
-        // echo loadView('partials/_slider_index');
+        // echo loadView('partials/_slider_index'); 
     endif;
-// endif;
+endif;
+if ($generalSettings->show_featured_section != 1):
+    if ($activeTheme->theme == 'news'):
+        echo view('themes/news/partials/_slider_index');
+    endif;
+    // else :
+    //     echo loadView('partials/_main_slider');
+    // endif;
+else:
+    echo iew('partials/_main_slider');
+endif;
+
+
 $catSliderIds = array();
 $i = 0;
 if (!empty($baseCategories)):

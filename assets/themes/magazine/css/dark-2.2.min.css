@@ -451,3 +451,7 @@ td {
 .quiz-container .question-answers .answer-format-text .progress .progress-bar {
     background-color: #2C2C2C !important;
 }
+
+.ulListService .listService {
+    color: #222222 !important;
+}
