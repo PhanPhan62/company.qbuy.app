@@ -241,8 +241,15 @@
                         </ul>
                     </p>
                     <a href="https://company.qbuy.app/gioi-thieu" target="_self"
-                        class="button border success is-small" style="border-radius:99px;">
-                        <span style="background-color: #e8e8e5; padding: 12px; border-radius: 20px; color: #000000;">Xem chi tiết</span>
+                        class="button border success is-small showMore" style="border-radius:99px;">
+                        <span  style="background-color: #e8e8e5; padding: 12px; border-radius: 20px; color: #000000;">Xem chi tiết</span>
+                    
+
+                        <style>
+                            .showMore:hover{
+                                transform: scale(1.05);
+                            }
+                        </style>
                     </a>
                 </div>
             </div>

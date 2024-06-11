@@ -1,15 +1,58 @@
 <div id="nav-top" class="d-flex align-items-center">
-    <div class="container-xl d-flex justify-content-center justify-content-between">
+    <div class=" container-xl d-flex justify-content-center justify-content-between">
+        <h5 >
+            <div class="cssanimation typing d-flex"> 
+                <span class="QText">Q</span>
+                <span class="BuyText">Buy </span>
+                <span>-</span>
+                <span> Bên bạn trên mọi cung đường</span>
+            </div>
+            
+        </h5>
+        
+        <style>
+            .QText{
+                color: #0000ff;
+            }
+            .BuyText{
+                color: #ff0000
+            }
+            .typing {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 2px solid #7E2EA0;
+                animation: typing 5s steps(35, end), cursor .5s steps(33, end) infinite;
+                /* animation: typing 10s steps(20, end) infinite, cursor 10s step-end infinite; */
+                text-transform: uppercase;
+            }
+
+            .typing::after {
+                content: attr(data-text);
+                visibility: hidden;
+                white-space: nowrap;
+            }
+            @keyframes typing {
+                from { width: 0 }
+            }
+            @keyframes cursor {
+                50% { border-color: transparent }
+            }
+        </style>
         <div class="d-flex align-items-center">
             <ul class="navbar-nav flex-row top-left">
                 <?php if (!empty($baseMenuLinks)):
-foreach ($baseMenuLinks as $item):
-if ($item->item_visibility == 1 && $item->item_location == 'top'): ?>
-                <li class="nav-item"><a href="<?= generateMenuItemURL($item, $baseCategories); ?>"
-                        class="nav-link"><?= esc($item->item_name); ?></a></li>
-                <?php endif;
-endforeach;
-endif; ?>
+                    foreach ($baseMenuLinks as $item):
+                        if ($item->item_visibility == 1 && $item->item_location == 'top'): ?>
+                            <li class="nav-item">
+                                <a href="<?= generateMenuItemURL($item, $baseCategories); ?>"
+                                    class="nav-link"><?= esc($item->item_name); ?>
+                                </a>
+                            </li>
+                        <?php endif;
+                    endforeach;
+                endif; ?>
+               
             </ul>
         </div>
         <div class="d-flex align-items-center">
@@ -18,7 +61,7 @@ endif; ?>
                 <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
                         data-bs-target="#modalAddPost"><?= trans("add_post"); ?></a></li>
                 <?php endif;
-if (authCheck()): ?>
+                if (authCheck()): ?>
                 <li class="nav-item dropdown profile-dropdown display-flex align-items-center">
                     <a href="#" class="nav-link dropdown-toggle display-flex align-items-center" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,14 +91,14 @@ if (authCheck()): ?>
                     </ul>
                 </li>
                 <?php else:
-if ($generalSettings->registration_system == 1): ?>
+                if ($generalSettings->registration_system == 1): ?>
                 <li class="nav-item display-flex align-items-center"><a href="#" class="nav-link" data-bs-toggle="modal"
                         data-bs-target="#modalLogin"><?= trans("login"); ?></a><span
                         class="span-login-sep">&nbsp;/&nbsp;</span><a href="<?= generateURL('register'); ?>"
                         class="nav-link"><?= trans("register"); ?></a></li>
                 <?php endif; ?>
                 <?php endif;
-if ($generalSettings->multilingual_system == 1 && countItems($activeLanguages) > 1): ?>
+                if ($generalSettings->multilingual_system == 1 && countItems($activeLanguages) > 1): ?>
                 <li class="nav-item dropdown dropdown-languages">
                     <a class="nav-link dropdown-toggle display-flex align-items-center" data-bs-toggle="dropdown"
                         aria-expanded="false" href="#">
@@ -68,10 +111,10 @@ if ($generalSettings->multilingual_system == 1 && countItems($activeLanguages) >
                     </a>
                     <ul class="dropdown-menu">
                         <?php foreach ($activeLanguages as $language):
-$langURL = base_url($language->short_form);
-if ($language->id == $generalSettings->site_lang):
-$langURL = base_url();
-endif; ?>
+                            $langURL = base_url($language->short_form);
+                            if ($language->id == $generalSettings->site_lang):
+                            $langURL = base_url();
+                            endif; ?>
                         <li><a href="<?= $langURL; ?>"
                                 class="dropdown-item <?= $language->id == $activeLang->id ? 'selected' : ''; ?>"><?= $language->name; ?></a>
                         </li>
@@ -104,6 +147,7 @@ endif; ?>
                         <?php endif; ?>
                     </form>
                 </li>
+                
             </ul>
         </div>
     </div>
