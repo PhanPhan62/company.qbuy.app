@@ -43,7 +43,7 @@ if ($generalSettings->show_featured_section != 1):
     //     echo loadView('partials/_main_slider');
     // endif;
 else:
-    echo iew('partials/_main_slider');
+    echo view('partials/_main_slider');
 endif;
 
 

@@ -64,7 +64,7 @@
             <div class="row" id="row-960331198">
                 <div class="col small-12 large-12">
                     <div class="col-inner text-center">
-                        <h1 style="color: #fff;">GIỚI THIỆU</h1>
+                        <h1 style="color: #fff;"><i class="fa-solid fa-phone"></i>GIỚI THIỆU</h1>
                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_958331588">
                             <div class="img-inner dark " style="margin:20px 0px 0px 0px;">
                                 <img width="1139" height="24"
@@ -94,10 +94,10 @@
 
                         <p>
                             <ul class="ulListService">
-                                <li class="listService">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và Đất đai</li>
-                                <li class="listService">Lập bản đồ địa chính, địa hình. Trích đo địa chính, đo diện tích ví trí, hiện trạng và cắm mốc ranh giới thửa đất</li>
-                                <li class="listService">Lập hồ sơ xin tách thửa, chỉ giới đường đỏ, cấp mới cấp đổi GCN, và đăng ký biến động thửa đất.</li>
-                                <li class="listService">Với đội ngũ nhân lực có kinh nghiệm và chuyên môn cao trong lĩnh vực đo đạc, bản đồ và đất đai, có thiết bị công nghệ phần mềm hiện đại nên sản phẩm dịch vụ luôn đảm bảo chất lượng cao, đáp ứng tiến độ nhanh, chi phí hợp lý.</li>
+                                <li  style="color: #fff; !important" class="listService">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và Đất đai</li>
+                                <li  style="color: #fff; !important" class="listService">Lập bản đồ địa chính, địa hình. Trích đo địa chính, đo diện tích ví trí, hiện trạng và cắm mốc ranh giới thửa đất</li>
+                                <li  style="color: #fff; !important" class="listService">Lập hồ sơ xin tách thửa, chỉ giới đường đỏ, cấp mới cấp đổi GCN, và đăng ký biến động thửa đất.</li>
+                                <li  style="color: #fff; !important" class="listService">Với đội ngũ nhân lực có kinh nghiệm và chuyên môn cao trong lĩnh vực đo đạc, bản đồ và đất đai, có thiết bị công nghệ phần mềm hiện đại nên sản phẩm dịch vụ luôn đảm bảo chất lượng cao, đáp ứng tiến độ nhanh, chi phí hợp lý.</li>
                                 <style>
                                     .listService{
                                         text-align: justify;
@@ -108,6 +108,10 @@
                                     }
                                     .ulListService {
                                         padding-left: 0 !important;
+                                        
+                                    }
+                                    .listService{
+                                        color: #fff !important;
                                     }
 
                                     @media (max-width: 500px) {
