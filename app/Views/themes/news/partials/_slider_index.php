@@ -64,7 +64,7 @@
             <div class="row" id="row-960331198">
                 <div class="col small-12 large-12">
                     <div class="col-inner text-center">
-                        <h1 style="color: #fff;"><i class="fa-solid fa-phone"></i>GIỚI THIỆU</h1>
+                        <h1 style="color: #fff;">  GIỚI THIỆU</h1>
                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_958331588">
                             <div class="img-inner dark " style="margin:20px 0px 0px 0px;">
                                 <img width="1139" height="24"
@@ -213,7 +213,7 @@
                         <div class="icon-box-text last-reset">
 
                             <h3 style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
-                            <p style="color: #fff"><?php echo esc($item->description); ?></p>
+                            <p style="color: #fff; padding: 5px"><?php echo esc($item->description); ?></p>
                         </div>
 
                         <style scope="scope">
@@ -258,12 +258,16 @@
                 </div>
             </div>
         </div>
+       
         <div class="image-container">
-            <img src="https://company.qbuy.app/uploads/gallery/202406/image_500x_665d79968f7b4.jpg" alt="Thumbnail Image 2" class="thumbnail">
-            <img src="https://company.qbuy.app/uploads/gallery/202406/image_500x_665d6c72a74b3.jpg" alt="Thumbnail Image 3" class="thumbnail">
-            <img src="https://company.qbuy.app/uploads/gallery/202406/image_500x_665d7b6566d6c.jpg" alt="Thumbnail Image 1" class="thumbnail">
-            <img src="https://company.qbuy.app/uploads/images/202406/image_694x532_665d73dbcdd21.jpg" alt="Thumbnail Image 1" class="thumbnail">
-            <!-- Add more images as needed -->
+        <?php 
+        // $imgBaseURL = getBaseURLByStorage($item->storage);
+        $album_id = 2;
+        $images=getListPermit($album_id);
+        foreach ($images as $item): ?>
+            <img src="<?= urlInWeb()?><?= esc($item->path_big);  ?>" alt="Thumbnail Image 2" class="thumbnail">    
+            <?php endforeach;
+        ?>
         </div>
         <div id="popup" class="popup">
             <span class="close">&times;</span>
@@ -409,19 +413,3 @@
         </script>
     </div>
 </div>
-
-<!-- <div class="container-xl m-auto">
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Link with href
-        </a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Button with data-bs-target
-        </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-        </div>
-    </div>
-</div> -->

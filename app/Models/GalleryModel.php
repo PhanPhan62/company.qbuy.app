@@ -328,6 +328,13 @@ class GalleryModel extends BaseModel
         return $this->builderCategory->where('album_id', cleanNumber($albumId))->get()->getResult();
     }
 
+    //get gallery 
+    public function getListPermit($album_id)
+    {
+        // return $this->builder->get()->getResult();
+        return $this->builder->where('album_id', $album_id)->get()->getResult();
+    }
+
     //get category
     public function getCategory($id)
     {

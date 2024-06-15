@@ -588,6 +588,14 @@ if (!function_exists('getGalleryAlbum')) {
         return $model->getAlbum($id);
     }
 }
+//get gallery 
+if (!function_exists('getListPermit')) {
+    function getListPermit($album_id)
+    {
+        $model = new \App\Models\GalleryModel();
+        return $model->getListPermit($album_id);
+    }
+}
 
 //get gallery category
 if (!function_exists('getGalleryCategory')) {
@@ -1629,11 +1637,11 @@ if (!function_exists('getCategoryByID')) {
     }
 }
 // get by id and parent_id
-// if (!function_exists('getCategoryByIDChild')) {
-//     function getCategoryByIDChild($parent_id)
+// if (!function_exists('getListPermit')) {
+//     function getListPermit($parent_id)
 //     {
 //         $model = new \App\Models\CategoryModel();
-//         return $model->getCategoryByIDChild($parent_id);
+//         return $model->getListPermit($parent_id);
 //     }
 // }
 if (!function_exists('getByParentId')) {
@@ -2215,5 +2223,19 @@ if (!function_exists('isBot')) {
             return true;
         }
         return false;
+    }
+}
+if (!function_exists('urlInWeb')) {
+    function urlInWeb()
+    {
+        // Lấy giao thức (http hoặc https)
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        // Lấy tên miền
+        $host = $_SERVER['HTTP_HOST'];
+        // Lấy đường dẫn (path) của URL
+        $uri = $_SERVER['REQUEST_URI'];
+        // Ghép các phần lại để có URL đầy đủ
+        $url = $protocol . $host . $uri;
+        return $url;
     }
 }

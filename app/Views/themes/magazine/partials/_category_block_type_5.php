@@ -1,5 +1,7 @@
 <?php $limit = 15;
 $categoryPosts = getPostsByCategoryId($category->id, $baseCategories, $baseLatestCategoryPosts); ?>
+ 
+   
 <section class="section section-cat-slider"  id="<?= esc($category->name_slug); ?>">
     <div class="container-xl">
         <div class="section-title" >
