@@ -1,0 +1,49 @@
+CRITICAL - 2024-06-17 11:52:39 --> Undefined variable $images
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 37.
+ 1 APPPATH/Views/themes/news/partials/_slider_index.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/themes/magazine/index.php(40): view()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Common.php(91): view()
+10 APPPATH/Controllers/HomeController.php(53): loadView()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 11:52:49 --> Undefined variable $images
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 37.
+ 1 APPPATH/Views/themes/news/partials/_slider_index.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/themes/magazine/index.php(40): view()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Common.php(91): view()
+10 APPPATH/Controllers/HomeController.php(53): loadView()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 16:16:24 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "{0}" in /var/www/company.qbuy.app/system/HTTP/URI.php:549
+Stack trace:
+#0 /var/www/company.qbuy.app/system/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+#1 /var/www/company.qbuy.app/app/Common.php(987): CodeIgniter\HTTP\URI->getSegment()
+#2 /var/www/company.qbuy.app/app/Views/admin/includes/_header.php(275): getSegmentValue()
+#3 /var/www/company.qbuy.app/system/View/View.php(224): include('...')
+#4 /var/www/company.qbuy.app/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /var/www/company.qbuy.app/system/Common.php(1180): CodeIgniter\View\View->render()
+#6 /var/www/company.qbuy.app/app/Controllers/AdminController.php(69): view()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\AdminController->index()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#11 {main}
+  thrown
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

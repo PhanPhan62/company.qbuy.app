@@ -126,3 +126,418 @@ in APPPATH/Views/themes/news/partials/_slider_index.php on line 267.
 12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
 14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 10:36:05 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(471): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 12:14:19 --> Undefined array key "HTTP_HOST"
+in APPPATH/Common.php on line 2234.
+ 1 APPPATH/Common.php(2234): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/themes/news/partials/_slider_index.php(268): urlInWeb()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/themes/magazine/index.php(40): view()
+ 7 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 8 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+10 APPPATH/Common.php(91): view()
+11 APPPATH/Controllers/HomeController.php(53): loadView()
+12 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+13 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 12:14:28 --> Undefined array key "HTTP_HOST"
+in APPPATH/Common.php on line 2234.
+ 1 APPPATH/Common.php(2234): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/themes/news/partials/_slider_index.php(268): urlInWeb()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Views/themes/magazine/index.php(40): view()
+ 7 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 8 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+10 APPPATH/Common.php(91): view()
+11 APPPATH/Controllers/HomeController.php(53): loadView()
+12 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+13 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 13:58:31 --> Undefined property: stdClass::$name
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 271.
+ 1 APPPATH/Views/themes/news/partials/_slider_index.php(271): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/themes/magazine/index.php(40): view()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Common.php(91): view()
+10 APPPATH/Controllers/HomeController.php(53): loadView()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 13:59:19 --> Array to string conversion
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 270.
+ 1 APPPATH/Views/themes/news/partials/_slider_index.php(270): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/themes/magazine/index.php(40): view()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Common.php(91): view()
+10 APPPATH/Controllers/HomeController.php(53): loadView()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 14:23:29 --> Undefined variable $album_id
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 240.
+ 1 APPPATH/Views/themes/news/partials/_slider_index.php(240): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/news/partials/_slider_index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/themes/magazine/index.php(40): view()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Common.php(91): view()
+10 APPPATH/Controllers/HomeController.php(53): loadView()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 14:23:43 --> Call to undefined function getAlbums()
+in APPPATH/Views/themes/news/partials/_slider_index.php on line 237.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 4 APPPATH/Views/themes/magazine/index.php(40): view()
+ 5 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/themes/magazine/index.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 8 APPPATH/Common.php(91): view()
+ 9 APPPATH/Controllers/HomeController.php(53): loadView()
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->index()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:01:00 --> Uncaught ErrorException: Undefined variable $activeTheme in /var/www/company.qbuy.app/app/Views/errors/html/error_404.php:2
+Stack trace:
+#0 /var/www/company.qbuy.app/app/Views/errors/html/error_404.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/company.qbuy.app/system/Debug/Exceptions.php(282): include('...')
+#2 /var/www/company.qbuy.app/system/Debug/Exceptions.php(285): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#3 /var/www/company.qbuy.app/system/Debug/Exceptions.php(156): CodeIgniter\Debug\Exceptions->render()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 /var/www/company.qbuy.app/system/CodeIgniter.php(991): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 /var/www/company.qbuy.app/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->display404errors()
+#2 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#3 {main}
+in APPPATH/Views/errors/html/error_404.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-15 16:03:21 --> Class "App\Controllers\GalleryModel" not found
+in APPPATH/Controllers/IntroController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\IntroController->initController()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:10:18 --> Class "App\Controllers\GalleryModel" not found
+in APPPATH/Controllers/IntroController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\IntroController->initController()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:14:59 --> Call to undefined method App\Models\IntroModel::getImagesCount
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/IntroController.php(38): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->images()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:15:15 --> Call to undefined method App\Models\IntroModel::getImagesCount
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/IntroController.php(38): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->images()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:15:32 --> Call to undefined method App\Models\IntroModel::getImagesCount
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/IntroController.php(38): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->images()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:19:38 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:19:38 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:20:25 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:20:25 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:20:36 --> syntax error, unexpected variable "$this"
+in APPPATH/Controllers/IntroController.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:20:41 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:20:41 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:21:29 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:21:29 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:24:23 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:24:23 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:25:22 --> Trait "App\Controllers\Illuminate\Support\Facades\Log" not found
+in APPPATH/Controllers/IntroController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-06-15 16:26:23 --> mysqli_sql_exception: Unknown column 'name_slug' in 'field list' in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-15 16:35:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2 in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:35:41 --> Call to a member function getResult() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:38:27 --> Undefined variable $data
+in APPPATH/Views/admin/intro/intro.php on line 3.
+ 1 APPPATH/Views/admin/intro/intro.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:39:37 --> Undefined variable $data
+in APPPATH/Views/admin/intro/intro.php on line 3.
+ 1 APPPATH/Views/admin/intro/intro.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:39:58 --> Undefined variable $data
+in APPPATH/Views/admin/intro/intro.php on line 3.
+ 1 APPPATH/Views/admin/intro/intro.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:42:14 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/admin/intro/intro.php on line 3.
+ 1 APPPATH/Views/admin/intro/intro.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-15 16:44:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2 in /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/company.qbuy.app/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/company.qbuy.app/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/company.qbuy.app/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/company.qbuy.app/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/company.qbuy.app/app/Models/IntroModel.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/company.qbuy.app/app/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+#6 /var/www/company.qbuy.app/system/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+#7 /var/www/company.qbuy.app/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/company.qbuy.app/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-15 16:44:30 --> Call to a member function getRow() on false
+in APPPATH/Models/IntroModel.php on line 149.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:45:54 --> Call to a member function get() on null
+in APPPATH/Models/IntroModel.php on line 150.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:46:10 --> Call to a member function get() on null
+in APPPATH/Models/IntroModel.php on line 150.
+ 1 APPPATH/Controllers/IntroController.php(25): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:49:16 --> Attempt to read property "id" on string
+in APPPATH/Views/admin/intro/intro.php on line 5.
+ 1 APPPATH/Views/admin/intro/intro.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:49:27 --> Undefined variable $data
+in APPPATH/Views/admin/intro/intro.php on line 3.
+ 1 APPPATH/Views/admin/intro/intro.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/company.qbuy.app/app/Views/admin/intro/intro.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/IntroController.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:50:29 --> Call to a member function get() on null
+in APPPATH/Models/IntroModel.php on line 157.
+ 1 APPPATH/Controllers/IntroController.php(27): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 16:51:25 --> Object of class App\Models\IntroModel could not be converted to string
+in APPPATH/Models/IntroModel.php on line 156.
+ 1 APPPATH/Controllers/IntroController.php(27): App\Models\IntroModel->getIntro()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\IntroController->intro()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(78): CodeIgniter\CodeIgniter->run()

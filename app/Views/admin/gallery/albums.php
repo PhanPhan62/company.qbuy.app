@@ -75,6 +75,13 @@
                                                             <a href="<?= adminUrl('edit-gallery-album/' . $item->id); ?>"><i class="fa fa-edit option-icon"></i><?= trans('edit'); ?></a>
                                                         </li>
                                                         <li>
+                                                            <a href="javascript:void(0)" onclick="getShowAlbumInHome(<?= $item->id ?>)">
+                                                                <i class="fa fa-star option-icon"></i>
+                                                                <?= trans('show_intro_home_page'); ?>
+                                                                <!-- Hiển thị trang chủ -->
+                                                            </a>
+                                                        </li>
+                                                        <li>
                                                             <a href="javascript:void(0)" onclick="deleteItem('GalleryController/deleteAlbumPost','<?= $item->id; ?>','<?= clrQuotes(trans("confirm_album")); ?>');"><i class="fa fa-trash option-icon"></i><?= trans('delete'); ?></a>
                                                         </li>
                                                     </ul>

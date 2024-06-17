@@ -160,6 +160,7 @@
                             <ul class="treeview-menu">
                                 <li class="nav-gallery-images"><a href="<?= adminUrl('gallery-images'); ?>"><?= trans("images"); ?></a></li>
                                 <li class="nav-gallery-albums"><a href="<?= adminUrl('gallery-albums'); ?>"><?= trans("albums"); ?></a></li>
+                                <li class="nav-gallery-image"><a href="<?= adminUrl('intro'); ?>"><?= trans("intro"); ?></a></li>
                                 <li class="nav-gallery-categories"><a href="<?= adminUrl('gallery-categories'); ?>"><?= trans("categories"); ?></a></li>
                             </ul>
                         </li>

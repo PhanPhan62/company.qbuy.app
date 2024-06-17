@@ -21,7 +21,7 @@
                 <div class="animation-container"> 
                 <img id="animatedImage" style="height: 130px; width: auto" src="https://company.qbuy.app/uploads/images/202406/temp_666bf7710a4607-04615846.png" alt="Moving Image">
 
-                <div id="animatedText" > 
+                <div id="animatedText" class="hidden-on-large"> 
                     <!-- <span class="QText">Q</span>
                     <span class="BuyText">Buy </span> 
                     <span>-</span>-->
@@ -33,55 +33,14 @@
         <!-- <div>Bên bạn trên mọi cung đường</div> -->
     </div>
 
-    <style>
-        .animation-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
+   <style>
+    @media (min-width: 992px) {
+    .hidden-on-large {
+            display: none;
         }
+    }
 
-        #animatedImage {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            animation: moveImageAnimation 4s linear forwards;
-        }
-
-        #animatedText {
-            position: relative;
-            font-size: 24px;
-            color: #333;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation: revealTextAnimation 4s linear forwards;
-        }
-
-        @keyframes moveImageAnimation {
-            from {
-                left: 0;
-            }
-            to {
-                left: 100%;
-            }
-        }
-
-        @keyframes revealTextAnimation {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        } .QText{
-            color: #0000ff;
-        }
-        .BuyText{
-            color: #ff0000
-            }
-            
-    </style>
+   </style>
                     <div class="d-flex justify-content-center align-items-center mb-3">
                         <div class="bd-highlight">
                             <a href="<?= generateCategoryURLById($post->category_id, $baseCategories); ?>">

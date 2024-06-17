@@ -20,7 +20,8 @@
                 </ol>
             </nav>
             <h1 class="page-title"><?= esc($category->name); ?></h1>
-            <div class="col-sm-12 col-md-12 col-lg-8">
+            <!-- <div class="col-sm-12 col-md-12 col-lg-8"> -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="row">
                     <?php $i = 0;
                     if (!empty($posts)):
@@ -28,7 +29,8 @@
                             if ($i == 2):
                                 echo loadView('partials/_ad_spaces', ['adSpace' => 'posts_top', 'class' => 'mb-4']);
                             endif; ?>
-                    <div class="col-sm-12 col-md-6">
+                    <!-- <div class="col-sm-12 col-md-6"> -->
+                    <div class="col-sm-12 col-md-4">
                         <?= loadView("post/_post_item", ['postItem' => $item, 'showLabel' => false]); ?>
                     </div>
                     <?php $i++;

@@ -596,6 +596,14 @@ if (!function_exists('getListPermit')) {
         return $model->getListPermit($album_id);
     }
 }
+//get getShowAlbumInHome 
+// if (!function_exists('getShowAlbumInHome')) {
+//     function getShowAlbumInHome($album_id)
+//     {
+//         $model = new \App\Models\GalleryModel();
+//         return $model->getShowAlbumInHome($id);
+//     }
+// }
 
 //get gallery category
 if (!function_exists('getGalleryCategory')) {
@@ -2237,5 +2245,12 @@ if (!function_exists('urlInWeb')) {
         // Ghép các phần lại để có URL đầy đủ
         $url = $protocol . $host . $uri;
         return $url;
+    }
+}
+if (!function_exists('showInHome')) {
+    function showInHome($album_id)
+    {
+        
+       return 1;
     }
 }

@@ -37,7 +37,8 @@ if ($generalSettings->show_featured_section == 1):
 endif;
 if ($generalSettings->show_featured_section != 1):
     if ($activeTheme->theme == 'news'):
-        echo view('themes/news/partials/_slider_index');
+        // echo view('themes/news/partials/_slider_index');
+        echo view('themes/news/partials/_dodac');
     endif;
     // else :
     //     echo loadView('partials/_main_slider');

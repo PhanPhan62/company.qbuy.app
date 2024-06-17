@@ -256,6 +256,17 @@ class GalleryModel extends BaseModel
         return $this->builderAlbum->orderBy('id DESC')->get()->getResult();
     }
 
+    //get gallery 
+    public function getListPermit($album_id)
+    {
+        return $this->builder->where('album_id', cleanNumber($album_id))->get()->getResult();
+    }
+    //get gallery album in home
+    // public function getShowAlbumInHome($id)
+    // {
+    //     return $this->builder->where('id', cleanNumber($id))->get()->getRow();
+    // }
+
     //get albums by lang
     public function getAlbumsByLang($langId)
     {
@@ -326,13 +337,6 @@ class GalleryModel extends BaseModel
     public function getCategoriesByAlbum($albumId)
     {
         return $this->builderCategory->where('album_id', cleanNumber($albumId))->get()->getResult();
-    }
-
-    //get gallery 
-    public function getListPermit($album_id)
-    {
-        // return $this->builder->get()->getResult();
-        return $this->builder->where('album_id', $album_id)->get()->getResult();
     }
 
     //get category

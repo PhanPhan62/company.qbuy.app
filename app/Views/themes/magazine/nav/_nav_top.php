@@ -3,6 +3,7 @@
         <div class="d-flex align-items-center">
            
         </div>
+        
         <div class="d-flex align-items-center">
             <ul class="navbar-nav flex-row top-left">
                 <?php if (!empty($baseMenuLinks)):
@@ -16,75 +17,66 @@
                         <?php endif;
                     endforeach;
                 endif; ?>
-               
             </ul>
         </div>
         <div class="animation-container"> 
             <img id="animatedImage" style="height: 130px; width: auto" src="https://company.qbuy.app/uploads/images/202406/temp_666bf7710a4607-04615846.png" alt="Moving Image">
-
-            <div id="animatedText" > 
-                <!-- <span class="QText">Q</span>
-                <span class="BuyText">Buy </span> 
-                <span>-</span>-->
-                <span> Bên bạn trên mọi cung đường</span>
+                <div id="animatedText" > 
+                    <!-- <span class="QText">Q</span>
+                    <span class="BuyText">Buy </span> 
+                    <span>-</span>-->
+                    <span class="nav-link"> Bên bạn trên mọi cung đường</span>
+                </div>
             </div>
-            
         </div>
-        <div >
-        <!-- <div>Bên bạn trên mọi cung đường</div> -->
-    </div>
+        <style>
+            .animation-container {
+                position: relative;
+                width: 80%;
+                overflow: hidden;
+            }
 
-    <style>
-        .animation-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            /* border: 1px solid #ccc; */
-            /* padding: 10px; */
-            /* background-color: #fff; */
-        }
-
-        #animatedImage {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            animation: moveImageAnimation 4s linear forwards;
-        }
-
-        #animatedText {
-            position: relative;
-            font-size: 24px;
-            color: #333;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation: revealTextAnimation 4s linear forwards;
-        }
-
-        @keyframes moveImageAnimation {
-            from {
+            #animatedImage {
+                position: absolute;
+                top: 50%;
                 left: 0;
+                transform: translateY(-50%);
+                animation: moveImageAnimation 4s linear forwards;
             }
-            to {
-                left: 100%;
-            }
-        }
 
-        @keyframes revealTextAnimation {
-            from {
+            #animatedText {
+                position: relative;
+                font-size: 24px;
+                /* color: #333; */
+                overflow: hidden;
+                white-space: nowrap;
                 width: 0;
+                animation: revealTextAnimation 4s linear forwards;
             }
-            to {
-                width: 100%;
+
+            @keyframes moveImageAnimation {
+                from {
+                    left: 0;
+                }
+                to {
+                    left: 100%;
+                }
             }
-        } .QText{
-            color: #0000ff;
-        }
-        .BuyText{
-            color: #ff0000
+
+            @keyframes revealTextAnimation {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            } .QText{
+                color: #0000ff;
             }
-            
+            .BuyText{
+                color: #ff0000
+                }
+                
         </style>
         <div class="d-flex align-items-center">
             <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-items-center">

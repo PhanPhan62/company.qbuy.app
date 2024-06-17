@@ -1,4 +1,4 @@
-<div class="col-sidebar sticky-lg-top">
+<!-- <div class="col-sidebar sticky-lg-top">
     <div class="row">
         <div class="col-12">
             <?php $i = 0;
@@ -14,4 +14,4 @@
             echo loadView('partials/_ad_spaces', ['adSpace' => 'sidebar_2', 'class' => 'mb-4']); ?>
         </div>
     </div>
-</div>
+</div> -->

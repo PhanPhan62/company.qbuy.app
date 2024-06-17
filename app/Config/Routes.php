@@ -165,6 +165,15 @@ $routes->get($customRoutes->admin . '/language-settings', 'LanguageController::l
 $routes->get($customRoutes->admin . '/edit-language/(:num)', 'LanguageController::editLanguage/$1');
 $routes->get($customRoutes->admin . '/edit-translations/(:num)', 'LanguageController::editTranslations/$1');
 
+//intro
+$routes->get($customRoutes->admin . '/intro', 'IntroController::intro');
+$routes->get($customRoutes->admin . '/intro-add-image', 'GalleryController::addImage');
+// $routes->get($customRoutes->admin . '/edit-intro-image/(:num)', 'GalleryController::editImage/$1');
+// $routes->get($customRoutes->admin . '/intro-albums', 'GalleryController::albums');
+// $routes->get($customRoutes->admin . '/edit-intro-album/(:num)', 'GalleryController::editAlbum/$1');
+// $routes->get($customRoutes->admin . '/intro-categories', 'GalleryController::categories');
+// $routes->get($customRoutes->admin . '/edit-intro-category/(:num)', 'GalleryController::editCategory/$1');
+
 /*
  * --------------------------------------------------------------------
  * DYNAMIC ROUTES
