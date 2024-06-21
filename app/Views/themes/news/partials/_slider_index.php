@@ -17,8 +17,6 @@
     <style>
     .carousel-item img{
         width: auto;
-        /* max-height:711px;
-        height: 475px; */
         object-fit: cover;
     }
     @media (max-width: 500px) {
@@ -195,152 +193,7 @@
 
                 </style>
             </div>
-            <?php 
-                // $album = getAlbums();
-                $album_id = 2;
-                $images=getListPermit($album_id);
-            ?>
-    <div class="image-container">
-        <?php 
             
-            foreach ($images as $item): ?>
-                <img src="<?= urlInWeb()?><?= esc($item->path_big);  ?>" title="<?= esc($item->title);?>" alt="<?= esc($item->title);?>" class="thumbnail">    
-            <?php endforeach;
-        ?>
-        </div>
-        <div id="popup" class="popup">
-            <span class="close">&times;</span>
-            <img class="popup-content" id="popup-image">
-            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-            <a class="next" onclick="changeImage(1)">&#10095;</a>
-        </div>
-        <style>
-            .image-container {
-                text-align: center;
-                margin-top: 50px;
-                margin-bottom: 50px
-            }
-
-            .thumbnail {
-                width: 200px;
-                cursor: pointer;
-                transition: 0.3s;
-                margin: 10px; 
-            }
-
-            .thumbnail:hover {
-                opacity: 0.7;
-            }
-            .popup-content:hover{
-                background-color:#ccc
-            }
-            .popup {
-                display: none;
-                position: fixed;
-                z-index: 1;
-                padding-top: 60px;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0,0.9);
-            }
-
-
-            .popup-content {
-                margin: auto;
-                display: block;
-                width: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                /* max-width: 700px; */
-                max-height: 650px;
-            }
-
-            .close {
-                position: absolute;
-                top: 15px;
-                right: 35px;
-                color: #f1f1f1;
-                font-size: 40px;
-                font-weight: bold;
-                transition: 0.3s;
-                cursor: pointer;
-            }
-
-            .close:hover,
-            .close:focus {
-                color: #bbb;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-            .prev, .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                padding: 16px;
-                margin-top: -22px;
-                color: white;
-                font-weight: bold;
-                font-size: 20px;
-                transition: 0.3s;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
-            }
-
-            .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-            }
-
-            .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
-            }
-
-
-        </style>
-        <script>
-            var popup = document.getElementById('popup');
-            var popupImage = document.getElementById('popup-image');
-            var close = document.getElementsByClassName('close')[0];
-
-            var thumbnails = document.getElementsByClassName('thumbnail');
-            var currentIndex = 0;
-
-            for (var i = 0; i < thumbnails.length; i++) {
-                thumbnails[i].onclick = function() {
-                    currentIndex = Array.prototype.indexOf.call(thumbnails, this);
-                    popup.style.display = 'block';
-                    popupImage.src = this.src;
-                }
-            }
-            close.onclick = function() {
-                popup.style.display = 'none';
-            }
-
-            window.onclick = function(event) {
-                if (event.target == popup) {
-                    popup.style.display = 'none';
-                }
-            }
-            function changeImage(n) {
-                currentIndex += n;
-                if (currentIndex >= thumbnails.length) {
-                    currentIndex = 0;
-                } else if (currentIndex < 0) {
-                    currentIndex = thumbnails.length - 1;
-                }
-                popupImage.src = thumbnails[currentIndex].src;
-            }
-
-
-        </script>
             <div class="gap-element clearfix" style="display:block; height:auto; padding-top:30px"></div>
         </div>
     </div>
@@ -349,7 +202,7 @@
 
 
 <!-- dịch vụ -->
-<div class="container-xl section-content relative" style="margin-top: 20px">
+<div class="container-xl section-content relative" style="margin-top: 20px;">
     <?php 
         $number=75;
         $category = getCategoryByID($number);

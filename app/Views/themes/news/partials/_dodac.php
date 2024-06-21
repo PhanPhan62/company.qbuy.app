@@ -1,7 +1,7 @@
 
 
-<div class="container-xl d-flex ">
-    <div class="col-10"> 
+<div class="container-xl d-flex dodacWindow">
+    <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10"> 
         <h1 class="w-auto mb-4" style="font-size: 30px; font-weight: bold; color: #0b4ca9; padding: 40px 0 0 10px">
             CÔNG TY CỔ PHẦN ĐO ĐẠC ĐỊA CHÍNH VÀ CÔNG TRÌNH KIÊN CƯỜNG
         </h1>
@@ -17,7 +17,7 @@
                     $images=getListPermit($album_id);
                 ?>
                 <div class="section-content relative">
-                    <div class="image-container">
+                    <div class="image-container d-flex">
                     <?php 
                         
                         foreach ($images as $item): ?>
@@ -66,8 +66,6 @@
                             background-color: rgb(0,0,0);
                             background-color: rgba(0,0,0,0.9);
                         }
-
-
                         .popup-content {
                             margin: auto;
                             display: block;
@@ -90,14 +88,12 @@
                             transition: 0.3s;
                             cursor: pointer;
                         }
-
                         .close:hover,
                         .close:focus {
                             color: #bbb;
                             text-decoration: none;
                             cursor: pointer;
                         }
-
                         .prev, .next {
                             cursor: pointer;
                             position: absolute;
@@ -112,17 +108,13 @@
                             border-radius: 0 3px 3px 0;
                             user-select: none;
                         }
-
                         .next {
                             right: 0;
                             border-radius: 3px 0 0 3px;
                         }
-
                         .prev:hover, .next:hover {
                             background-color: rgba(0,0,0,0.8);
                         }
-
-
                     </style>
                     <script>
                         var popup = document.getElementById('popup');
@@ -157,11 +149,9 @@
                             }
                             popupImage.src = thumbnails[currentIndex].src;
                         }
-
-
                     </script>
                 </div>
-                
+            
                 <li class="listService ">Với đội ngũ nhân lực có kinh nghiệm và chuyên môn cao trong lĩnh vực đo đạc, bản đồ và đất đai, có thiết bị công nghệ phần mềm hiện đại nên sản phẩm dịch vụ luôn đảm bảo chất lượng cao, đáp ứng tiến độ nhanh, chi phí hợp lý.</li>
             </ul>
            
@@ -169,14 +159,13 @@
                 .listService{
                     text-align: justify;
                     line-height: 30px;
-                    margin: 5px 0 5px 25px;
+                    margin: 5px 0 5px 15px;
                     font-size: 20px;
                     /* list-style-type: none; */
                     /* color: #fff; */
                 }
                 .ulListService {
-                    padding-left: 0 10px 0 0 !important;
-                    
+                    padding-left: 0 10px 0 0 !important;  
                 }
                 /* p{
                     color: #fff !important;
@@ -186,23 +175,155 @@
                     .imgIntro {
                         display: none;
                     }
-                    
+                    .listService{
+                        text-align: justify;
+                        line-height: 30px;
+                        margin: 5px 0 ;
+                        font-size: 20px;
+                    }
+                    .popup-content {
+                        margin: auto;
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        /* max-width: 700px; */
+                        max-height: 650px;
+                    }
+                    .close {
+                        position: absolute;
+                        top: 65px;
+                        right: 15px;
+                        color: #f1f1f1;
+                        font-size: 40px;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
                 }
 
             </style>
         </p>
     </div>
-    <div class="col-2"> 
-        <img style="width: 100%; max-width: 210px;object-fit: cover; max-height:300px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
-        <img style="width: 100%;height:300px;object-fit: cover; max-width: 210px; max-height:300px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
+    <div class="col-0 col-sm-2 col-md-2	col-lg-2 col-xl-2 col-xxl-2"> 
+        <img style="width: 100%; max-width: 210px; object-fit: cover; max-height:300px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <img style="width: 100%; height:300px; object-fit: cover; max-width: 210px; max-height:300px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
         <!-- <img style="width: 100%; max-height:300px"src="https://placehold.co/300x400" alt="Equipment 1" class="p-2 object-cover"> -->
     </div>
 
 </div>
 
-   
+<div class="container-xl dodacPhone">
+    <div class="col-6 col-sm-12 col-md-12 d-flex"> 
+        <img class="col-sm-6" style="width: 100%; object-fit: contain;" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <img class="col-sm-6" style="width: 100%; object-fit: contain; " src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <!-- <img style="width: 100%; max-height:300px"src="https://placehold.co/300x400" alt="Equipment 1" class="p-2 object-cover"> -->
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12"> 
+        <h1 class="w-auto mb-4" style="font-size: 23px; font-weight: bold; color: #0b4ca9; padding: 40px 0 0 10px">
+            CÔNG TY CP ĐO ĐẠC ĐỊA CHÍNH VÀ CÔNG TRÌNH KIÊN CƯỜNG
+        </h1>
+        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <?php foreach ($images as $index => $item): ?>
+                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                        <img style=" height: auto; max-height: 250px; object-fit: contain;" class="col-12" src="<?= urlInWeb() . esc($item->path_big); ?>" class="d-block w-100" title="<?= esc($item->title); ?>" alt="<?= esc($item->title); ?>">
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var carouselItems = document.querySelectorAll('#carouselExample2 .carousel-item img');
+                
+                carouselItems.forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        // Tạo một modal overlay
+                        var modal = document.createElement('div');
+                        modal.classList.add('modal-overlay');
+                        
+                        // Tạo một ảnh phóng to trong modal
+                        var modalImg = document.createElement('img');
+                        modalImg.src = this.src;
+                        modalImg.alt = this.alt;
+                        modalImg.classList.add('modal-img');
+                        
+                        // Đóng modal khi click vào ảnh phóng to hoặc ra ngoài modal
+                        modal.addEventListener('click', function(e) {
+                            if (e.target === modal || e.target === modalImg) {
+                                modal.remove();
+                            }
+                        });
+                        
+                        // Thêm ảnh phóng to vào modal
+                        modal.appendChild(modalImg);
+                        
+                        // Thêm modal vào body của trang web
+                        document.body.appendChild(modal);
+                    });
+                });
+            });
+        </script>
+        <style>
+            .modal-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            .modal-img {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                cursor: pointer;
+            }
+        </style>
+
+
+        <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
+    </div>
+    <style>
+        
+    </style>
+</div>
+<style>
+    .dodacWindow {
+        display: block ;
+    }
+    .dodacPhone {
+        display: none !important;
+    }
+    @media (max-width: 500px) {
+        .dodacWindow {
+            display: none !important;
+        }
+        .dodacPhone {
+            display: block !important;
+        }
+    }
+</style>
+
 <!-- dịch vụ -->
-<div class="container-xl section-content relative" style="margin-top: 20px">
+<div class="container-xl section-content relative" style="margin-top: 20px; display: none">
     <?php 
         $number=75;
         $category = getCategoryByID($number);
@@ -223,6 +344,7 @@
                             src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
                             class="attachment-original size-original col-12" alt=""
                             srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
+                            style="object-fit: cover"
                         >
                     </div>
 
@@ -281,6 +403,161 @@
             </div>
         </div>
         <?php endforeach; ?>
+    </div>
+    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
+</div>
+<div class="container-xl section-content relative" style="margin-top: 20px;">
+    
+    <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
+    <div class="row" id="row-service-9">
+        <div class="col small-12 large-12">
+            <div class="col-inner text-center">
+                <!-- <h1></h1>
+                <p>
+                    <span style="color: #777"></span>
+                </p> -->
+                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2637762889">
+                    <div class="img-inner dark">
+                        <img  
+                            src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
+                            class="attachment-original size-original col-12" alt=""
+                            srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
+                            style="object-fit: cover"
+                        >
+                    </div>
+
+                    <style scope="scope">
+                        #image_263776288 {
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
+   
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+            <div class="col-inner text-center dark"
+                style="background-color: #008000;padding:50px 0px 50px 0px">
+                <a class="plain" href="https://dodacdiachinh.net/dich-vu-dat-dai"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 style="text-align: center; color: #fff">Dịch vụ đất đai</h3>
+                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến đo đạc, lập hồ sơ, xin cấp mới, cấp đổi, và nhiều dịch vụ khác liên quan đến đất đai.</p>
+                        </div>
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                /* font-family:'Montserrat', sans-serif; */
+                                text-transform: uppercase;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 17px;
+                                background-color : transparent;
+                                padding: 10px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+            <div class="col-inner text-center dark"
+                style="background-color: #f0c12d;padding:50px 0px 50px 0px">
+                <a class="plain" href="https://dodacdiachinh.net/dia-chinh"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 style="text-align: center; color: #fff">Địa chính</h3>
+                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến các thủ tục giấy tờ, kê khai đăng ký xây dựng cơ sở dữ liệu về địa chính và các thủ tục pháp lý.</p>
+                        </div>
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                /* font-family:'Montserrat', sans-serif; */
+                                text-transform: uppercase;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 17px;
+                                background-color : transparent;
+                                padding: 10px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+            <div class="col-inner text-center dark"
+                style="background-color: #3079d5;padding:50px 0px 50px 0px">
+                <a class="plain" href="https://dodacdiachinh.net/dia-hinh"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 style="text-align: center; color: #fff">Địa hình</h3>
+                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến các thủ tục giấy tờ, kê khai đăng ký xây dựng cơ sở dữ liệu về địa chính và các thủ tục pháp lý.</p>
+                        </div>
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                /* font-family:'Montserrat', sans-serif; */
+                                text-transform: uppercase;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 17px;
+                                background-color : transparent;
+                                padding: 10px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        
     </div>
     <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
 </div>

@@ -1,0 +1,18 @@
+CRITICAL - 2024-06-19 03:05:28 --> Uncaught ErrorException: Undefined variable $activeTheme in /var/www/company.qbuy.app/app/Views/errors/html/error_404.php:2
+Stack trace:
+#0 /var/www/company.qbuy.app/app/Views/errors/html/error_404.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/company.qbuy.app/system/Debug/Exceptions.php(282): include('...')
+#2 /var/www/company.qbuy.app/system/Debug/Exceptions.php(285): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#3 /var/www/company.qbuy.app/system/Debug/Exceptions.php(156): CodeIgniter\Debug\Exceptions->render()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 /var/www/company.qbuy.app/system/CodeIgniter.php(991): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 /var/www/company.qbuy.app/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->display404errors()
+#2 /var/www/company.qbuy.app/index.php(78): CodeIgniter\CodeIgniter->run()
+#3 {main}
+in APPPATH/Views/errors/html/error_404.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
