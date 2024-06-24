@@ -7,7 +7,11 @@
         </h1>
         <p>
             <ul class="ulListService" class="listService">
-                <span style=" font-size: 18px; font-size: 25px; font-weight: bold; color: red">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
+            
+        <a href="/gioi-thieu">
+            <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
+        </a>    
+            <!-- <span style=" font-size: 18px; font-size: 25px; font-weight: bold; color: red">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span> -->
                 <li class="listService">Thành lập bản đồ địa chính, lập hồ sơ địa chính, kê khai đăng ký và xây dựng cơ sở dữ liệu đất đai</li>
                 <li class="listService">Trích đo địa chính, đo diện tích, hiện trạng và cắm mốc ranh giới thửa đất; lập hồ sơ xin: tách thửa, chỉ giới đường đỏ, cấp mới, cấp đổi GCN</li>
                 <li class="listService">Đo đạc công trình, khảo sát địa hình</li>
@@ -162,6 +166,7 @@
                     margin: 5px 0 5px 15px;
                     font-size: 20px;
                     /* list-style-type: none; */
+                    list-style-type: disc !important;
                     /* color: #fff; */
                 }
                 .ulListService {
@@ -180,6 +185,7 @@
                         line-height: 30px;
                         margin: 5px 0 ;
                         font-size: 20px;
+                        list-style-type: disc!important;
                     }
                     .popup-content {
                         margin: auto;
@@ -216,9 +222,10 @@
 </div>
 
 <div class="container-xl dodacPhone">
-    <div class="col-6 col-sm-12 col-md-12 d-flex"> 
-        <img class="col-sm-6" style="width: 100%; object-fit: contain;" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
-        <img class="col-sm-6" style="width: 100%; object-fit: contain; " src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
+    <div class="col-12 col-sm-12 col-md-12 d-flex" style="justify-content: center;
+            align-items: center;"> 
+        <img class="col-sm-6" style="height: 50%; object-fit: contain; max-height: 100px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <img class="col-sm-6" style="height: 50%; object-fit: contain; max-height: 100px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
         <!-- <img style="width: 100%; max-height:300px"src="https://placehold.co/300x400" alt="Equipment 1" class="p-2 object-cover"> -->
     </div>
 
@@ -226,11 +233,11 @@
         <h1 class="w-auto mb-4" style="font-size: 23px; font-weight: bold; color: #0b4ca9; padding: 40px 0 0 10px">
             CÔNG TY CP ĐO ĐẠC ĐỊA CHÍNH VÀ CÔNG TRÌNH KIÊN CƯỜNG
         </h1>
-        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <?php foreach ($images as $index => $item): ?>
                     <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                        <img style=" height: auto; max-height: 250px; object-fit: contain;" class="col-12" src="<?= urlInWeb() . esc($item->path_big); ?>" class="d-block w-100" title="<?= esc($item->title); ?>" alt="<?= esc($item->title); ?>">
+                        <img style="height: auto; max-height: 250px; object-fit: contain;" class="col-12" src="<?= urlInWeb() . esc($item->path_big); ?>" class="d-block w-100" title="<?= esc($item->title); ?>" alt="<?= esc($item->title); ?>">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -242,64 +249,202 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div> -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.3/dist/panzoom.min.js"></script>
+    <style>
+        #zoom-container {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modalImage {
+            transition: transform 0.3s ease;
+        }
+    </style>
+        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <?php foreach ($images as $index => $item): ?>
+            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                <img 
+                    style="height: auto; max-height: 250px; object-fit: contain; cursor: pointer;" 
+                    class="col-12" 
+                    src="<?= urlInWeb() . esc($item->path_big); ?>" 
+                    class="d-block w-100" 
+                    title="<?= esc($item->title); ?>" 
+                    alt="<?= esc($item->title); ?>"
+                    onclick="showModal('<?= urlInWeb() . esc($item->path_big); ?>', '<?= esc($item->title); ?>')"
+                >
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="zoom-container">
+                    <img id="modalImage" src="" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
+    </div>
+</div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var carouselItems = document.querySelectorAll('#carouselExample2 .carousel-item img');
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showModal(imageUrl, title) {
+        $('#modalImage').attr('src', imageUrl);
+        $('#imageModalLabel').text(title);
+        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+        initPanzoom();
+    }
+
+    function initPanzoom() {
+        const element = document.getElementById('modalImage');
+        Panzoom(element, {
+            maxScale: 5
+        });
+    }
+
+    $('#imageModal').on('hidden.bs.modal', function () {
+        // Destroy Panzoom instance to reset zoom
+        const element = document.getElementById('modalImage');
+        Panzoom(element).destroy();
+    });
+</script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var carouselItems = document.querySelectorAll('#carouselExample2 .carousel-item img');
+        
+        carouselItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                // Tạo một modal overlay
+                var modal = document.createElement('div');
+                modal.classList.add('modal-overlay');
                 
-                carouselItems.forEach(function(item) {
-                    item.addEventListener('click', function() {
-                        // Tạo một modal overlay
-                        var modal = document.createElement('div');
-                        modal.classList.add('modal-overlay');
-                        
-                        // Tạo một ảnh phóng to trong modal
-                        var modalImg = document.createElement('img');
-                        modalImg.src = this.src;
-                        modalImg.alt = this.alt;
-                        modalImg.classList.add('modal-img');
-                        
-                        // Đóng modal khi click vào ảnh phóng to hoặc ra ngoài modal
-                        modal.addEventListener('click', function(e) {
-                            if (e.target === modal || e.target === modalImg) {
-                                modal.remove();
-                            }
-                        });
-                        
-                        // Thêm ảnh phóng to vào modal
-                        modal.appendChild(modalImg);
-                        
-                        // Thêm modal vào body của trang web
-                        document.body.appendChild(modal);
-                    });
+                // Tạo một ảnh phóng to trong modal
+                var modalImg = document.createElement('img');
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                modalImg.classList.add('modal-img');
+                
+                // Tạo nút đóng modal
+                var closeButton = document.createElement('span');
+                closeButton.classList.add('modal-close');
+                closeButton.innerHTML = '&times;';
+                closeButton.addEventListener('click', function() {
+                    modal.remove();
                 });
+                
+                // Tạo nút zoom +
+                var zoomInButton = document.createElement('button');
+                zoomInButton.classList.add('modal-zoom');
+                zoomInButton.innerHTML = '+';
+                zoomInButton.addEventListener('click', function() {
+                    var currentWidth = modalImg.clientWidth;
+                    var currentHeight = modalImg.clientHeight;
+                    modalImg.style.maxWidth = (currentWidth + 50) + 'px';
+                    modalImg.style.maxHeight = (currentHeight + 50) + 'px';
+                });
+                
+                // Tạo nút zoom -
+                var zoomOutButton = document.createElement('button');
+                zoomOutButton.classList.add('modal-zoom');
+                zoomOutButton.innerHTML = '-';
+                zoomOutButton.addEventListener('click', function() {
+                    var currentWidth = modalImg.clientWidth;
+                    var currentHeight = modalImg.clientHeight;
+                    modalImg.style.maxWidth = (currentWidth - 50) + 'px';
+                    modalImg.style.maxHeight = (currentHeight - 50) + 'px';
+                });
+                
+                // Đóng modal khi click vào modal overlay
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.remove();
+                    }
+                });
+                
+                // Thêm ảnh phóng to và các nút vào modal
+                modal.appendChild(modalImg);
+                modal.appendChild(closeButton);
+                modal.appendChild(zoomInButton);
+                modal.appendChild(zoomOutButton);
+                
+                // Thêm modal vào body của trang web
+                document.body.appendChild(modal);
             });
-        </script>
-        <style>
-            .modal-overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.9);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1000;
-            }
+        });
+    });
+</script>
 
-            .modal-img {
-                max-width: 90%;
-                max-height: 90%;
-                object-fit: contain;
-                cursor: pointer;
-            }
-        </style>
+<style>
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .modal-img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .modal-zoom {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+</style> -->
 
 
-        <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
+
+        <a href="/gioi-thieu">
+            <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
+        </a>
+        <!-- <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span> -->
     </div>
     <style>
         
@@ -406,6 +551,7 @@
     </div>
     <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
 </div>
+
 <div class="container-xl section-content relative" style="margin-top: 20px;">
     
     <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
@@ -436,18 +582,17 @@
         </div>
     </div>
     <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
-   
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
             <div class="col-inner text-center dark"
-                style="background-color: #008000;padding:50px 0px 50px 0px">
-                <a class="plain" href="https://dodacdiachinh.net/dich-vu-dat-dai"
+                style="background-color: #008000;padding:50px 0px; min-height: 250px">
+                <a class="plain" href="/dich-vu-dat-dai"
                     target="_self">
                     <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
                         
                         <div class="icon-box-text last-reset">
 
-                            <h3 style="text-align: center; color: #fff">Dịch vụ đất đai</h3>
-                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến đo đạc, lập hồ sơ, xin cấp mới, cấp đổi, và nhiều dịch vụ khác liên quan đến đất đai.</p>
+                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Dịch vụ đất đai</h3>
+                            <p style="color: #fff; padding: 5px">Trích đo địa chính, cắm mốc giới, lập hồ sơ kỹ thuật thửa đất và  lập hồ sơ xin: cấp mới, cấp đổi GCN, tách thửa, chỉ giới đường đỏ - Quy hoạch.</p>
                         </div>
                         <style scope="scope">
                             .hoverMe {
@@ -477,17 +622,25 @@
                 </a>
             </div>
         </div>
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
             <div class="col-inner text-center dark"
-                style="background-color: #f0c12d;padding:50px 0px 50px 0px">
-                <a class="plain" href="https://dodacdiachinh.net/dia-chinh"
+                style="background-color: #f0c12d; padding:50px 0px; min-height: 250px">
+                <a class="plain" href="/dia-chinh"
                     target="_self">
                     <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
                         
                         <div class="icon-box-text last-reset">
 
-                            <h3 style="text-align: center; color: #fff">Địa chính</h3>
-                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến các thủ tục giấy tờ, kê khai đăng ký xây dựng cơ sở dữ liệu về địa chính và các thủ tục pháp lý.</p>
+                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa chính</h3>
+                            <!-- <ul style="list-style-type: disc; padding-left: 40px;"> 
+                                <li style="text-align: justify; color: #fff; padding: 0 20px 0 0;">
+                                    Thành lập bản đồ địa chính, trích đo địa chính
+                                </li>
+                                <li style="text-align: justify; color: #fff; padding: 0 20px 0 0;">
+                                    Lập hồ sơ địa chính, kê khai đăng ký đất đai, xây dựng cơ sở dữ liệu đất đai.
+                                </li>
+                            </ul> -->
+                            <p style="color: #fff; padding: 5px">Thành lập bản đồ địa chính, lập hồ sơ địa chính, kê khai đăng ký và xây dựng cơ sở dữ liệu đất đai.</p>
                         </div>
                         <style scope="scope">
                             .hoverMe {
@@ -517,17 +670,17 @@
                 </a>
             </div>
         </div>
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
             <div class="col-inner text-center dark"
-                style="background-color: #3079d5;padding:50px 0px 50px 0px">
-                <a class="plain" href="https://dodacdiachinh.net/dia-hinh"
+                style="background-color: #3079d5;padding:50px 0px; min-height: 250px">
+                <a class="plain" href="/dia-hinh"
                     target="_self">
                     <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
                         
                         <div class="icon-box-text last-reset">
 
-                            <h3 style="text-align: center; color: #fff">Địa hình</h3>
-                            <p style="color: #fff; padding: 5px">Cung cấp dịch vụ liên quan đến các thủ tục giấy tờ, kê khai đăng ký xây dựng cơ sở dữ liệu về địa chính và các thủ tục pháp lý.</p>
+                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa hình</h3>
+                            <p style="color: #fff; padding: 5px">Đo đạc công trình, khảo sát địa hình, Xây dựng lưới thi công và Quan trắc biến dạng công trình.</p>
                         </div>
                         <style scope="scope">
                             .hoverMe {

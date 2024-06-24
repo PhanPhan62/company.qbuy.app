@@ -121,7 +121,7 @@ $itemsMegaMenu = array();
 
             <hr class="d-md-none text-white-50">
             
-            <ul class="navbar-nav navbar-right flex-row flex-wrap align-items-center ms-md-auto">
+            <!-- <ul class="navbar-nav navbar-right flex-row flex-wrap align-items-center ms-md-auto">
                 <li class="nav-item col-6 col-lg-auto position-relative">
                     <button type="button" class="btn-link nav-link py-2 px-0 px-lg-2 search-icon display-flex align-items-center" aria-label="search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -141,7 +141,7 @@ $itemsMegaMenu = array();
                         </form>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 </div>
