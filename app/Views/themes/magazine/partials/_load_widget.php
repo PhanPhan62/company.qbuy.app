@@ -28,7 +28,7 @@
             <?php $popularPosts = getPopularPosts($activeLang->id, $baseLatestCategoryPosts);
                     if (!empty($popularPosts)):
                         foreach ($popularPosts as $item): ?>
-            <div class="col-12">
+            <div class="col-12 sticky-lg-top">
                 <?= loadView('post/_post_item_small', ['postItem' => $item, 'showLabel' => false]); ?>
             </div>
             <?php endforeach;
@@ -46,7 +46,7 @@
             <?php $recommendedPosts = getRecommendedPosts();
                     if (!empty($recommendedPosts)):
                         foreach ($recommendedPosts as $item): ?>
-            <div class="col-12">
+            <div class="col-12 sticky-lg-top">
                 <?= loadView('post/_post_item_small', ['postItem' => $item, 'showLabel' => false]); ?>
             </div>
             <?php endforeach;

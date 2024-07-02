@@ -1,48 +1,43 @@
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img  src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448422082_482130407563062_2864130429168202677_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KY9U81eyM5kQ7kNvgGBnrHs&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QH78rZG4xn4owgUNeIhY6rc-QMjh37bFXbpS6MWlBbv2A&oe=669712FA" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p> -->
-      </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-   
-
-    <style>
-    .carousel-item img{
-        width: auto;
-        object-fit: cover;
-    }
-    @media (max-width: 500px) {
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img  src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448422082_482130407563062_2864130429168202677_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KY9U81eyM5kQ7kNvgGBnrHs&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QH78rZG4xn4owgUNeIhY6rc-QMjh37bFXbpS6MWlBbv2A&oe=669712FA" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+        </div>
+        <style>
         .carousel-item img{
             width: auto;
-            max-height:711px;
-            height: 150px;
             object-fit: cover;
         }
-    }
-    </style>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+        @media (max-width: 500px) {
+            .carousel-item img{
+                width: auto;
+                max-height:711px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+        </style>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
-
-
 <!-- Giới thiệu -->
-
 
 <div class="intro" style="width:; background-color: #31653f">
     <div class="container-xl">
@@ -199,14 +194,11 @@
     </div>
 </div>
 
-
-
 <!-- dịch vụ -->
 <div class="container-xl section-content relative" style="margin-top: 20px;">
     <?php 
         $number=75;
         $category = getCategoryByID($number);
-        // $categoryChild = getCategoryByIDChild($number);
         $categories = getByParentId($number);
     ?>
     <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->

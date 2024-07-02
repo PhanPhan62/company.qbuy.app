@@ -14,6 +14,7 @@
             <?php endif;
             if ($page->right_column_active == 1): ?>
             <div class="col-sm-12 col-md-12 col-lg-8">
+            <!-- <div class="col-sm-12 col-md-12 col-lg12"> -->
                 <?php endif; ?>
                 <div class="page-content font-text page-text">
                     <?= $page->page_content; ?>

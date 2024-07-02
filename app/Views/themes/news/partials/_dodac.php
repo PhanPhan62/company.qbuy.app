@@ -2,15 +2,15 @@
 
 <div class="container-xl d-flex dodacWindow">
     <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10"> 
-        <h1 class="w-auto mb-4" style="font-size: 30px; font-weight: bold; color: #0b4ca9; padding: 40px 0 0 10px">
+        <h1 class="w-auto mb-2" style="text-align: center; font-size: 24px; font-weight: bold; color: #0b4ca9; padding: 20px 0 0 10px">
             CÔNG TY CỔ PHẦN ĐO ĐẠC ĐỊA CHÍNH VÀ CÔNG TRÌNH KIÊN CƯỜNG
         </h1>
-        <p>
+   
             <ul class="ulListService" class="listService">
             
-        <a href="/gioi-thieu">
-            <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
-        </a>    
+            <a href="/gioi-thieu">
+                <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red;">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai</span>
+            </a>    
             <!-- <span style=" font-size: 18px; font-size: 25px; font-weight: bold; color: red">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span> -->
                 <li class="listService">Thành lập bản đồ địa chính, lập hồ sơ địa chính, kê khai đăng ký và xây dựng cơ sở dữ liệu đất đai</li>
                 <li class="listService">Trích đo địa chính, đo diện tích, hiện trạng và cắm mốc ranh giới thửa đất; lập hồ sơ xin: tách thửa, chỉ giới đường đỏ, cấp mới, cấp đổi GCN</li>
@@ -21,13 +21,14 @@
                     $images=getListPermit($album_id);
                 ?>
                 <div class="section-content relative">
-                    <div class="image-container d-flex">
+                    <div class="image-container d-flex justify-content-evenly">
                     <?php 
                         
                         foreach ($images as $item): ?>
                             <img  src="<?= urlInWeb()?><?= esc($item->path_big);  ?>" title="<?= esc($item->title);?>" alt="<?= esc($item->title);?>" class="thumbnail">    
                         <?php endforeach;
                     ?>
+                    
                     </div>
                     <div id="popup" class="popup">
                         <span class="close">&times;</span>
@@ -40,6 +41,7 @@
                             text-align: center;
                             /* margin-top: 50px; */
                             /* margin-bottom: 50px */
+                            z-index: 1022
                         }
 
                         .thumbnail {
@@ -48,7 +50,9 @@
                             max-height: 200px;
                             cursor: pointer;
                             transition: 0.3s;
-                            margin: 10px; 
+                            margin: 10px;
+                            flex-d
+                            z-index: 1022
                         }
 
                         .thumbnail:hover {
@@ -69,6 +73,7 @@
                             overflow: auto;
                             background-color: rgb(0,0,0);
                             background-color: rgba(0,0,0,0.9);
+                            z-index: 1022
                         }
                         .popup-content {
                             margin: auto;
@@ -79,7 +84,7 @@
                             left: 50%;
                             transform: translate(-50%, -50%);
                             /* max-width: 700px; */
-                            max-height: 650px;
+                            max-height: 600px;
                         }
 
                         .close {
@@ -211,99 +216,352 @@
                 }
 
             </style>
-        </p>
+        
     </div>
     <div class="col-0 col-sm-2 col-md-2	col-lg-2 col-xl-2 col-xxl-2"> 
-        <img style="width: 100%; max-width: 210px; object-fit: cover; max-height:300px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
-        <img style="width: 100%; height:300px; object-fit: cover; max-width: 210px; max-height:300px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <img style="width: 100%; height: 300px; object-fit: cover; max-width: 210px; max-height: 300px; " src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
+        <img style="width: 100%; height: 300px; object-fit: cover; max-width: 210px; max-height: 300px;" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
         <!-- <img style="width: 100%; max-height:300px"src="https://placehold.co/300x400" alt="Equipment 1" class="p-2 object-cover"> -->
     </div>
 
 </div>
 
-<div class="container-xl dodacPhone">
-    <div class="col-12 col-sm-12 col-md-12 d-flex" style="justify-content: center;
-            align-items: center;"> 
-        <img class="col-sm-6" style="height: 50%; object-fit: contain; max-height: 100px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
-        <img class="col-sm-6" style="height: 50%; object-fit: contain; max-height: 100px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/448487588_1103530524043312_4265049523153803439_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2D_BT-_7eEQ7kNvgFbPQbq&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD1QHoe7focdbRk5Sn8i-5Dee-nxWFhdLxGCitvmfADXxkug&oe=669759EA" alt="Equipment 1" class="p-2 object-cover mb-1">
-        <!-- <img style="width: 100%; max-height:300px"src="https://placehold.co/300x400" alt="Equipment 1" class="p-2 object-cover"> -->
-    </div>
-
+<div class="container-xl dodacPhone d-flex">
     <div class="col-12 col-sm-12 col-md-12"> 
-        <h1 class="w-auto mb-4" style="font-size: 23px; font-weight: bold; color: #0b4ca9; padding: 40px 0 0 10px">
+        <h1 class="w-auto mb-44" style="line-height: 30px; text-align: center; font-size: 18px; font-weight: bold; color: #0b4ca9; padding: 5px 0 0 0px">
             CÔNG TY CP ĐO ĐẠC ĐỊA CHÍNH VÀ CÔNG TRÌNH KIÊN CƯỜNG
         </h1>
-        <!-- <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <?php foreach ($images as $index => $item): ?>
+        <!-- <?php foreach ($images as $index => $item): ?>
                     <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                        <img style="height: auto; max-height: 250px; object-fit: contain;" class="col-12" src="<?= urlInWeb() . esc($item->path_big); ?>" class="d-block w-100" title="<?= esc($item->title); ?>" alt="<?= esc($item->title); ?>">
+                        <img style="height: auto; max-height: 300px; object-fit: contain;" class="col-12" src="<?= urlInWeb() . esc($item->path_big); ?>" class="d-block w-100" title="<?= esc($item->title); ?>" alt="<?= esc($item->title); ?>">
                     </div>
-                <?php endforeach; ?>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
+                <?php endforeach; ?>-->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.3/dist/panzoom.min.js"></script>
-    <style>
-        #zoom-container {
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #modalImage {
-            transition: transform 0.3s ease;
-        }
-    </style>
-        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <?php foreach ($images as $index => $item): ?>
-            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+        <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.3/dist/panzoom.min.js"></script>
+    </div>
+    <div id="carouselExample2" class="carousel slide col-12 d-flex pb-3" data-bs-ride="carousel">
+        <div class="carousel-inner " >
+            <?php foreach ($images as $index => $item): ?>
+            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>" >
                 <img 
-                    style="height: auto; max-height: 250px; object-fit: contain; cursor: pointer;" 
-                    class="col-12" 
+                    style=" max-height: 300px; object-fit: contain; cursor: pointer;" 
+                    style="height: 200px; max-height: 200px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
                     src="<?= urlInWeb() . esc($item->path_big); ?>" 
-                    class="d-block w-100" 
+                    class="col-12 d-block w-100 h-100" 
                     title="<?= esc($item->title); ?>" 
                     alt="<?= esc($item->title); ?>"
                     onclick="showModal('<?= urlInWeb() . esc($item->path_big); ?>', '<?= esc($item->title); ?>')"
                 >
             </div>
-        <?php endforeach; ?>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <?php endforeach; ?>
+            <!-- </div> -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="color: #000c" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="color: #000c" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <style>
+            .carousel-control-prev-icon  {
+                background-color: black; /* Đặt màu nền cho icon */
+                background-image: none; /* Xóa nền mặc định */
+                mask: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22%23000%22 viewBox=%220 0 16 16%22%3e%3cpath d=%22M11.354 1.146a.5.5 0 0 1 0 .708L5.207 8l6.147 6.146a.5.5 0 0 1-.708.708l-6.5-6.5a.5.5 0 0 1 0-.708l6.5-6.5a.5.5 0 0 1 .708 0z%22/%3e%3c/svg%3e') no-repeat center center; /* Đặt icon SVG tùy chỉnh */
+                mask-size: 100%; /* Đặt kích thước mask */
+            }
+            .carousel-control-next-icon  {
+                background-color: black; /* Đặt màu nền cho icon */
+                background-image: none; /* Xóa nền mặc định */
+                mask: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22%23000%22 viewBox=%220 0 16 16%22%3e%3cpath d=%22M4.646 1.146a.5.5 0 0 1 .708 0l6.5 6.5a.5.5 0 0 1 0 .708l-6.5 6.5a.5.5 0 0 1-.708-.708L10.793 8 4.646 1.854a.5.5 0 0 1 0-.708z%22/%3e%3c/svg%3e') no-repeat center center;  /* Đặt icon SVG tùy chỉnh */
+                mask-size: 100%; /* Đặt kích thước mask */
+            }
+            .carousel-inner{
+                position: relative;
+            }
+            .carousel-item{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0s;
+            }   
+            .carousel-inner.active{
+                position: relative;
+            }
+            .carousel-item.active{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+        </style>
+        <!-- Modal -->
+            <div class="modal fade " id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="zoom-container">
+                                <img id="modalImage" src="" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <div id="zoom-container">
-                    <img id="modalImage" src="" class="img-fluid" alt="">
+
+            <div class="col-4" style=""> 
+                <img style="width: 100%; object-fit: cover;" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/448133003_832315775010784_1665438651705620777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pXENd_QQJsgQ7kNvgEv6Uyh&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD1QGimJMJLCsbGYkw5SC0R5EbDxy0WfFcPRkGcLEts_WslQ&oe=6697421C" alt="Equipment 1" class="p-2 object-cover mb-1">
+                <img style="width: 100%; object-fit: cover;" src="https://dodacvienthong.com/site/pictures/content/he-thong-dinh-vi-ve-tinh-gps-2-tan-so-rtk-hi-target-v30(1).png" alt="Equipment 1" class="p-2 object-cover mb-1">
+            </div>
+            
+            <!-- <span class="mt-3" style="font-size: 17px; font-weight: bold; color: red;">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span> -->
+        </div>
+        <a href="/gioi-thieu">
+            <span class="mt-3 pt-2" style="font-size: 23px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai</span>
+        </a>
+    </div>
+   
+
+</div>
+<!-- dịch vụ -->
+<div class="container-xl section-content relative" style="margin-top: 20px; display: none">
+    <?php 
+        $number=61;
+        $category = getCategoryByID($number);
+        $categories = getByParentId($number);
+    ?>
+    <div class="row" id="row-service-<?php echo esc($category->id) ?>">
+        <div class="col small-12 large-12">
+            <div class="col-inner text-center">
+                <h1><?= esc($category->name) ?></h1>
+                <p>
+                    <span style="color: #777"><?= esc($category->description) ?></span>
+                </p>
+                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_263776288">
+                    <div class="img-inner dark">
+                        <img  
+                            src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
+                            class="attachment-original size-original col-12" alt=""
+                            srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
+                            style="object-fit: cover"
+                        >
+                    </div>
+
+                    <style scope="scope">
+                        #image_263776288 {
+                            width: 100%;
+                        }
+                    </style>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row row-small align-equal align-center position-relative" id="row-image-<?php echo esc($category->id) ?>">
+    <?php foreach($categories as $item): ?>
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service mt-4">
+            <div class="col-inner text-center dark position-relative"
+                style="background-color: <?php echo esc($item->color); ?>;padding:50px 0px 50px 0px">
+                <a class="plain" href="<?= esc($category->name_slug) ?>/<?php echo esc($item->name_slug); ?>"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 class="title-service" style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
+                            <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none"><?php echo esc($item->description); ?></p>
+                        </div>
+                
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 15px;
+                                background-color : transparent;
+                                padding: 5px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe position-absolute "><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
+</div>
+
+<div class="container-xl section-content relative" style="margin-top: 20px;">
+    <div class="row" id="row-service-9">
+        <div class="col small-12 large-12">
+            <div class="col-inner text-center">
+                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2637762889">
+                    <div class="img-inner dark">
+                        <img  
+                            src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
+                            class="attachment-original size-original col-12" alt=""
+                            srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
+                            style="object-fit: cover"
+                        >
+                    </div>
+
+                    <style scope="scope">
+                        #image_263776288 {
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .title-service{
+            margin-bottom: 20px;
+        }
+        .content-service{
+            line-height: 30px !important;
+            font-size: 17px;
+        }
+    </style>
+
+    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 300px; min-height:300px; height:300px ">
+            <div class="col-inner text-center dark position-relative"
+                style="background-color: #008000; padding:30px 0px; min-height: 300px">
+               
+                <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                    <div class="icon-box-text last-reset">
+                        <h3 class="title-service" style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase;">Dịch vụ đất đai</h3>
+                        <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none">Trích đo địa chính, cắm mốc giới, lập hồ sơ kỹ thuật thửa đất và lập hồ sơ xin: tách thửa, cấp mới, cấp đổi GCN, chỉ giới đường đỏ - Quy hoạch...</p>
+                    </div>
+                    <style scope="scope">
+                        .hoverMe {
+                            transition: all .5s ease;
+                            color: #fff;
+                            border: 3px solid white;
+                            
+                            text-align: center;
+                            line-height: 1;
+                            font-size: 15px;
+                            background-color : transparent;
+                            padding: 5px;
+                            outline: none;
+                            border-radius: 4px;
+                        }
+                        .hoverMe:hover {
+                            color: #001F3F;
+                            background-color: #fff;
+                        }
+                        .service{
+                            margin-top:20px 
+                        }
+                    </style>
+                </div>
+                <a class="plain" href="/dich-vu-dat-dai"
+                target="_self">
+                    <button class="hoverMe" style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%)"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 300px; min-height:300px; height:300px ">
+            <div class="col-inner text-center dark position-relative"
+                style="background-color: #a89218; padding:30px 0px; min-height: 300px">
+                <a class="plain" href="/dia-chinh"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 class="title-service" style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa chính</h3>
+                            <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none">Thành lập bản đồ địa chính, lập hồ sơ địa chính, kê khai đăng ký và xây dựng cơ sở dữ liệu đất đai...</p>
+                        </div>
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 15px;
+                                background-color : transparent;
+                                padding: 5px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe" style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%)"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 300px; min-height: 300px; height:300px ">
+            <div class="col-inner text-center dark position-relative"
+                style="background-color: #3079d5; padding:30px 0px; min-height: 300px">
+                <a class="plain" href="/dia-hinh"
+                    target="_self">
+                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
+                        
+                        <div class="icon-box-text last-reset">
+
+                            <h3 class="title-service" style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa hình</h3>
+                            <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none">Đo đạc công trình, khảo sát địa hình, Xây dựng lưới thi công và Quan trắc biến dạng công trình...</p>
+                        </div>
+                        <style scope="scope">
+                            .hoverMe {
+                                transition: all .5s ease;
+                                color: #fff;
+                                border: 3px solid white;
+                                
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 15px;
+                                background-color : transparent;
+                                padding: 5px;
+                                outline: none;
+                                border-radius: 4px;
+                            }
+                            .hoverMe:hover {
+                                color: #001F3F;
+                                background-color: #fff;
+                            }
+                            .service{
+                                margin-top:20px 
+                            }
+                        </style>
+                    </div>
+                    <button class="hoverMe" style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%)"><?= trans("more")?></button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -325,132 +583,22 @@
     }
 
     $('#imageModal').on('hidden.bs.modal', function () {
-        // Destroy Panzoom instance to reset zoom
         const element = document.getElementById('modalImage');
         Panzoom(element).destroy();
     });
 </script>
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var carouselItems = document.querySelectorAll('#carouselExample2 .carousel-item img');
-        
-        carouselItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                // Tạo một modal overlay
-                var modal = document.createElement('div');
-                modal.classList.add('modal-overlay');
-                
-                // Tạo một ảnh phóng to trong modal
-                var modalImg = document.createElement('img');
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
-                modalImg.classList.add('modal-img');
-                
-                // Tạo nút đóng modal
-                var closeButton = document.createElement('span');
-                closeButton.classList.add('modal-close');
-                closeButton.innerHTML = '&times;';
-                closeButton.addEventListener('click', function() {
-                    modal.remove();
-                });
-                
-                // Tạo nút zoom +
-                var zoomInButton = document.createElement('button');
-                zoomInButton.classList.add('modal-zoom');
-                zoomInButton.innerHTML = '+';
-                zoomInButton.addEventListener('click', function() {
-                    var currentWidth = modalImg.clientWidth;
-                    var currentHeight = modalImg.clientHeight;
-                    modalImg.style.maxWidth = (currentWidth + 50) + 'px';
-                    modalImg.style.maxHeight = (currentHeight + 50) + 'px';
-                });
-                
-                // Tạo nút zoom -
-                var zoomOutButton = document.createElement('button');
-                zoomOutButton.classList.add('modal-zoom');
-                zoomOutButton.innerHTML = '-';
-                zoomOutButton.addEventListener('click', function() {
-                    var currentWidth = modalImg.clientWidth;
-                    var currentHeight = modalImg.clientHeight;
-                    modalImg.style.maxWidth = (currentWidth - 50) + 'px';
-                    modalImg.style.maxHeight = (currentHeight - 50) + 'px';
-                });
-                
-                // Đóng modal khi click vào modal overlay
-                modal.addEventListener('click', function(e) {
-                    if (e.target === modal) {
-                        modal.remove();
-                    }
-                });
-                
-                // Thêm ảnh phóng to và các nút vào modal
-                modal.appendChild(modalImg);
-                modal.appendChild(closeButton);
-                modal.appendChild(zoomInButton);
-                modal.appendChild(zoomOutButton);
-                
-                // Thêm modal vào body của trang web
-                document.body.appendChild(modal);
-            });
-        });
-    });
-</script>
 
 <style>
-    .modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+   
+    #zoom-container {
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1000;
     }
-
-    .modal-img {
-        max-width: 90%;
-        max-height: 90%;
-        object-fit: contain;
-        cursor: pointer;
+    #modalImage {
+        transition: transform 0.3s ease;
     }
-
-    .modal-close {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .modal-zoom {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        color: white;
-        font-size: 24px;
-        background-color: rgba(0, 0, 0, 0.5);
-        border: none;
-        cursor: pointer;
-        padding: 5px 10px;
-    }
-</style> -->
-
-
-
-        <a href="/gioi-thieu">
-            <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span>
-        </a>
-        <!-- <span class="mt-3" style="font-size: 18px; font-weight: bold; color: red; ">Chuyên hoạt động về lĩnh vực Đo đạc, Bản đồ và đất đai:</span> -->
-    </div>
-    <style>
-        
-    </style>
-</div>
-<style>
     .dodacWindow {
         display: block ;
     }
@@ -466,253 +614,3 @@
         }
     }
 </style>
-
-<!-- dịch vụ -->
-<div class="container-xl section-content relative" style="margin-top: 20px; display: none">
-    <?php 
-        $number=75;
-        $category = getCategoryByID($number);
-        // $categoryChild = getCategoryByIDChild($number);
-        $categories = getByParentId($number);
-    ?>
-    <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
-    <div class="row" id="row-service-<?php echo esc($category->id) ?>">
-        <div class="col small-12 large-12">
-            <div class="col-inner text-center">
-                <!-- <h1><?= esc($category->name) ?></h1>
-                <p>
-                    <span style="color: #777"><?= esc($category->description) ?></span>
-                </p> -->
-                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_263776288">
-                    <div class="img-inner dark">
-                        <img  
-                            src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
-                            class="attachment-original size-original col-12" alt=""
-                            srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
-                            style="object-fit: cover"
-                        >
-                    </div>
-
-                    <style scope="scope">
-                        #image_263776288 {
-                            width: 100%;
-                        }
-                    </style>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
-    <?php foreach($categories as $item): ?>
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
-            <div class="col-inner text-center dark"
-                style="background-color: <?php echo esc($item->color); ?>;padding:50px 0px 50px 0px">
-                <a class="plain" href="<?= esc($category->name_slug) ?>/<?php echo esc($item->name_slug); ?>"
-                    target="_self">
-                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                        
-                        <div class="icon-box-text last-reset">
-
-                            <h3 style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
-                            <p style="color: #fff; padding: 5px"><?php echo esc($item->description); ?></p>
-                        </div>
-                        <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
-                        
-
-                        <style scope="scope">
-                            .hoverMe {
-                                transition: all .5s ease;
-                                color: #fff;
-                                border: 3px solid white;
-                                /* font-family:'Montserrat', sans-serif; */
-                                text-transform: uppercase;
-                                text-align: center;
-                                line-height: 1;
-                                font-size: 17px;
-                                background-color : transparent;
-                                padding: 10px;
-                                outline: none;
-                                border-radius: 4px;
-                            }
-                            .hoverMe:hover {
-                                color: #001F3F;
-                                background-color: #fff;
-                            }
-                            .service{
-                                margin-top:20px 
-                            }
-                        </style>
-                    </div>
-                    <button class="hoverMe"><?= trans("more")?></button>
-                </a>
-            </div>
-        </div>
-        <?php endforeach; ?>
-    </div>
-    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
-</div>
-
-<div class="container-xl section-content relative" style="margin-top: 20px;">
-    
-    <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
-    <div class="row" id="row-service-9">
-        <div class="col small-12 large-12">
-            <div class="col-inner text-center">
-                <!-- <h1></h1>
-                <p>
-                    <span style="color: #777"></span>
-                </p> -->
-                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2637762889">
-                    <div class="img-inner dark">
-                        <img  
-                            src="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png"
-                            class="attachment-original size-original col-12" alt=""
-                            srcset="https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line.png 1139w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-300x6.png 300w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-768x16.png 768w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-1024x22.png 1024w, https://mauweb.monamedia.net/greenuni/wp-content/uploads/2018/12/section_line-600x13.png 600w"
-                            style="object-fit: cover"
-                        >
-                    </div>
-
-                    <style scope="scope">
-                        #image_263776288 {
-                            width: 100%;
-                        }
-                    </style>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
-            <div class="col-inner text-center dark"
-                style="background-color: #008000;padding:50px 0px; min-height: 250px">
-                <a class="plain" href="/dich-vu-dat-dai"
-                    target="_self">
-                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                        
-                        <div class="icon-box-text last-reset">
-
-                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Dịch vụ đất đai</h3>
-                            <p style="color: #fff; padding: 5px">Trích đo địa chính, cắm mốc giới, lập hồ sơ kỹ thuật thửa đất và  lập hồ sơ xin: cấp mới, cấp đổi GCN, tách thửa, chỉ giới đường đỏ - Quy hoạch.</p>
-                        </div>
-                        <style scope="scope">
-                            .hoverMe {
-                                transition: all .5s ease;
-                                color: #fff;
-                                border: 3px solid white;
-                                /* font-family:'Montserrat', sans-serif; */
-                                text-transform: uppercase;
-                                text-align: center;
-                                line-height: 1;
-                                font-size: 17px;
-                                background-color : transparent;
-                                padding: 10px;
-                                outline: none;
-                                border-radius: 4px;
-                            }
-                            .hoverMe:hover {
-                                color: #001F3F;
-                                background-color: #fff;
-                            }
-                            .service{
-                                margin-top:20px 
-                            }
-                        </style>
-                    </div>
-                    <button class="hoverMe"><?= trans("more")?></button>
-                </a>
-            </div>
-        </div>
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
-            <div class="col-inner text-center dark"
-                style="background-color: #f0c12d; padding:50px 0px; min-height: 250px">
-                <a class="plain" href="/dia-chinh"
-                    target="_self">
-                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                        
-                        <div class="icon-box-text last-reset">
-
-                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa chính</h3>
-                            <!-- <ul style="list-style-type: disc; padding-left: 40px;"> 
-                                <li style="text-align: justify; color: #fff; padding: 0 20px 0 0;">
-                                    Thành lập bản đồ địa chính, trích đo địa chính
-                                </li>
-                                <li style="text-align: justify; color: #fff; padding: 0 20px 0 0;">
-                                    Lập hồ sơ địa chính, kê khai đăng ký đất đai, xây dựng cơ sở dữ liệu đất đai.
-                                </li>
-                            </ul> -->
-                            <p style="color: #fff; padding: 5px">Thành lập bản đồ địa chính, lập hồ sơ địa chính, kê khai đăng ký và xây dựng cơ sở dữ liệu đất đai.</p>
-                        </div>
-                        <style scope="scope">
-                            .hoverMe {
-                                transition: all .5s ease;
-                                color: #fff;
-                                border: 3px solid white;
-                                /* font-family:'Montserrat', sans-serif; */
-                                text-transform: uppercase;
-                                text-align: center;
-                                line-height: 1;
-                                font-size: 17px;
-                                background-color : transparent;
-                                padding: 10px;
-                                outline: none;
-                                border-radius: 4px;
-                            }
-                            .hoverMe:hover {
-                                color: #001F3F;
-                                background-color: #fff;
-                            }
-                            .service{
-                                margin-top:20px 
-                            }
-                        </style>
-                    </div>
-                    <button class="hoverMe"><?= trans("more")?></button>
-                </a>
-            </div>
-        </div>
-        <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 250px; min-height:250px; height:250px ">
-            <div class="col-inner text-center dark"
-                style="background-color: #3079d5;padding:50px 0px; min-height: 250px">
-                <a class="plain" href="/dia-hinh"
-                    target="_self">
-                    <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
-                        
-                        <div class="icon-box-text last-reset">
-
-                            <h3 style="text-align: center; color: #fff; font-size: 30px; font-weight: bold; text-transform: uppercase">Địa hình</h3>
-                            <p style="color: #fff; padding: 5px">Đo đạc công trình, khảo sát địa hình, Xây dựng lưới thi công và Quan trắc biến dạng công trình.</p>
-                        </div>
-                        <style scope="scope">
-                            .hoverMe {
-                                transition: all .5s ease;
-                                color: #fff;
-                                border: 3px solid white;
-                                /* font-family:'Montserrat', sans-serif; */
-                                text-transform: uppercase;
-                                text-align: center;
-                                line-height: 1;
-                                font-size: 17px;
-                                background-color : transparent;
-                                padding: 10px;
-                                outline: none;
-                                border-radius: 4px;
-                            }
-                            .hoverMe:hover {
-                                color: #001F3F;
-                                background-color: #fff;
-                            }
-                            .service{
-                                margin-top:20px 
-                            }
-                        </style>
-                    </div>
-                    <button class="hoverMe"><?= trans("more")?></button>
-                </a>
-            </div>
-        </div>
-        
-    </div>
-    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
-</div>
-
-

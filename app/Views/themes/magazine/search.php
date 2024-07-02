@@ -8,7 +8,8 @@
                 </ol>
             </nav>
             <h1 class="page-title"><?= trans("search"); ?>:&nbsp;<span class="search-text"><?= esc($q); ?></span></h1>
-            <div class="col-sm-12 col-md-12 col-lg-8">
+            <!-- <div class="col-sm-12 col-md-12 col-lg-8"> -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="d-flex flex-row-reverse align-items-center mb-3">
                     <form action="<?= generateURL('search'); ?>" method="get" id="form_search_in_content">
                         <input type="hidden" name="q" value="<?= esc($q); ?>">

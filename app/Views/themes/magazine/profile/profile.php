@@ -170,6 +170,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-8 pt-2">
+            <!-- <div class="col-sm-12 col-md-12 col-lg-12 pt-2"> -->
                 <div class="row">
                     <?php $i = 0;
                     if (!empty($posts)):

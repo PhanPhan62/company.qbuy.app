@@ -1,7 +1,8 @@
-<div class="col-sm-12 col-md-12 col-lg-4">
+<!-- <div class="col-sm-12 col-md-12 col-lg-4"> -->
+<div class="col-sm-12  col-lg-4">
     <div class="col-sidebar sticky-lg-top">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 skjhg">
                 <?php if (!empty($objectWidgets->widgets)):
                     foreach ($objectWidgets->widgets as $widget):
                         echo loadView('partials/_load_widget', ['widget' => $widget]);

@@ -3,8 +3,8 @@ $menuLimit = $generalSettings->menu_limit;
 $itemsMegaMenu = array(); 
 ?>
 
-<div class="navbar navbar-expand-md nav-main">
-    <nav class="container-xl">
+<div class="navbar navbar-expand-md nav-main ">
+    <nav class="container-xl ">
         <!-- Logo when dark mode -->
         <a style="font-size:16px"href="<?= langBaseUrl(); ?>" class="navbar-brand p-0">
             <img src="<?= $darkMode == 1 ? getLogoFooter() : getLogo(); ?>" alt="logo" class="logo" width="180" height="52">
@@ -17,7 +17,7 @@ $itemsMegaMenu = array();
                         <a style="font-size:16px" href="<?= langBaseUrl(); ?>" class="nav-link"><?= trans("home"); ?></a>
                     </li>
                 <?php endif; ?>
-
+                
                 <?php
                 $totalItem = 0;
                 $i = 1;
@@ -117,11 +117,27 @@ $itemsMegaMenu = array();
                         </ul>
                     </li>
                 <?php endif; ?>
+                <!-- <li>
+                    <a class="fw-bold align-items-center" href="tel:0912069545">
+                        <p>0912069545</p>
+                    </a>
+                    <style>
+                        p {
+                            padding: 10px 0 0 10px;  
+                            color: #fff;
+                            font-size: 25px;
+                            /* text-transform: uppercase; */
+                            text-align: center;
+                            justify-items: center;
+                            line-height: 1;
+                        }
+                    </style>
+                </li> -->
             </ul>
 
             <hr class="d-md-none text-white-50">
             
-            <!-- <ul class="navbar-nav navbar-right flex-row flex-wrap align-items-center ms-md-auto">
+            <ul class="navbar-nav navbar-right flex-row flex-wrap align-items-center ms-md-auto">
                 <li class="nav-item col-6 col-lg-auto position-relative">
                     <button type="button" class="btn-link nav-link py-2 px-0 px-lg-2 search-icon display-flex align-items-center" aria-label="search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -141,7 +157,7 @@ $itemsMegaMenu = array();
                         </form>
                     </div>
                 </li>
-            </ul> -->
+            </ul>
         </div>
     </nav>
 </div>

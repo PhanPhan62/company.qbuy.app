@@ -27,25 +27,37 @@
 <?php endif;
 
 // Chỗ chỉnh ẩn hiện slide
+// if ($generalSettings->show_featured_section == 1):
+//     if ($activeTheme->theme == 'news'):
+//         echo view('themes/news/partials/_main_slider');
+//     else:
+//         // echo loadView('partials/_main_slider');
+//         echo loadView('partials/_slider_index'); 
+//     endif;
+// else: 
+//     echo loadView('themes/news/partials/_dodac');
+// endif;
+
+
 if ($generalSettings->show_featured_section == 1):
     if ($activeTheme->theme == 'news'):
+        // echo view('themes/news/partials/_dodac');
         echo view('themes/news/partials/_main_slider');
-    else:
-        echo loadView('partials/_main_slider');
-        // echo loadView('partials/_slider_index'); 
+        // echo view('themes/news/partials/_dodac');
     endif;
-endif;
-if ($generalSettings->show_featured_section != 1):
-    if ($activeTheme->theme == 'news'):
-        // echo view('themes/news/partials/_slider_index');
-        echo view('themes/news/partials/_dodac');
-    endif;
-    // else :
-    //     echo loadView('partials/_main_slider');
-    // endif;
 else:
-    echo view('partials/_main_slider');
+    // echo loadView('partials/_main_slider'); 
+    echo view('themes/news/partials/_dodac');
 endif;
+
+
+// if ($generalSettings->show_featured_section != 1):
+//     if ($activeTheme->theme == 'news'):
+//         echo view('themes/news/partials/_dodac');
+//     endif;
+// else:
+//     echo view('partials/_main_slider');
+// endif;
 
 
 $catSliderIds = array();

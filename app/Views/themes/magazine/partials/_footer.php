@@ -57,8 +57,8 @@
     <div class="footer-copyright" style="padding: 10px 0">
         <div class="container-xl">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="copyright text-start">
+                <div class="col-sm-12 col-md-12">
+                    <div class="copyright text-center">
                         <?= esc($baseSettings->copyright); ?>
                     </div>
                 </div>

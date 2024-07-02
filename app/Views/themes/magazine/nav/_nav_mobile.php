@@ -1,6 +1,6 @@
 <div class="header-mobile-container">
     <div class="fixed-top">
-        <div class="header-mobile"  style="padding:0">
+        <div class="header-mobile">
             <div class="d-flex justify-content-between align-items-center">
                 <button type="button" class="menu-button mobile-menu-button" aria-label="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#222222" stroke-width="2"
@@ -10,20 +10,34 @@
                         <line x1="2" y1="18" x2="22" y2="18"></line>
                     </svg>
                 </button>
-                <div class="mobile-logo">
+                <div class="mobile-logo d-flex">
                     <a href="<?= langBaseUrl(); ?>">
                         <img src="<?= $darkMode == 1 ? getLogoFooter() : getLogo(); ?>" alt="logo" class="logo"
                             width="150" height="50">
                     </a>
+                    <a class="fw-bold align-items-center" href="tel:0912069545">
+                        <p class="phone-number">0912069545</p>
+                    </a>
+                    <style>
+                        .phone-number {
+                            padding: 10px 0 0 10px;  
+                            color: #fff;
+                            font-size: 25px;
+                            /* text-transform: uppercase; */
+                            text-align: center;
+                            justify-items: center;
+                            line-height: 1;
+                        }
+                    </style>
                 </div>
-                <div class="mobile-search">
-                    <!-- <button type="button" class="menu-button mobile-search-button" aria-label="search" style="">
+                <div class="mobile-search" >
+                    <button type="button" class="menu-button mobile-search-button" aria-label="search" style="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
-                    </button> -->
+                    </button>
                 </div>
             </div>
             <div class="mobile-search-form">

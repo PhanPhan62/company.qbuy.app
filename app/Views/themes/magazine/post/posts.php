@@ -9,6 +9,7 @@
             </nav>
             <h1 class="page-title"><?= trans("posts"); ?></h1>
             <div class="col-sm-12 col-md-12 col-lg-8">
+            <!-- <div class="col-sm-12 col-md-12 col-lg-12"> -->
                 <div class="row">
                     <?php $i = 0;
                     if (!empty($posts)):

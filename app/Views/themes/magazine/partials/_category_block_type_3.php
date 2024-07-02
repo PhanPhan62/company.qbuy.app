@@ -4,6 +4,7 @@ $mainClass = 'col-sm-12';
 $subClass = 'col-sm-12 col-md-6 col-lg-4';
 if ($categoryWidgets->hasWidgets) {
     $mainClass = 'col-sm-12 col-md-12 col-lg-8';
+    // $mainClass = 'col-sm-12 col-md-12 col-lg-12';
     $subClass = 'col-sm-12 col-md-6';
 }
 $subCategories = getSubcategories($category->id, $baseCategories); ?>

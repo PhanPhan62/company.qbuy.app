@@ -17,6 +17,7 @@
                 </ol>
             </nav>
             <div class="col-md-12 col-lg-8">
+            <!-- <div class="col-md-12 col-lg-12"> -->
                 <div class="post-content">
                 <div class="animation-container"> 
                 <img id="animatedImage" style="height: 130px; width: auto" src="https://company.qbuy.app/uploads/images/202406/temp_666bf7710a4607-04615846.png" alt="Moving Image">
@@ -27,20 +28,17 @@
                     <span>-</span>-->
                     <span> Bên bạn trên mọi cung đường</span>
                 </div>
-                    
             </div>
         <div >
-        <!-- <div>Bên bạn trên mọi cung đường</div> -->
     </div>
 
-   <style>
-    @media (min-width: 992px) {
-    .hidden-on-large {
-            display: none;
+    <style>
+        @media (min-width: 992px) {
+        .hidden-on-large {
+                display: none;
+            }
         }
-    }
-
-   </style>
+    </style>
                     <div class="d-flex justify-content-center align-items-center mb-3">
                         <div class="bd-highlight">
                             <a href="<?= generateCategoryURLById($post->category_id, $baseCategories); ?>">
@@ -73,49 +71,75 @@
                     </h2>
                     <?php endif; ?>
                     <div class="d-flex align-items-center post-details-meta mb-4">
-                        <?php if ($generalSettings->show_post_author == 1): ?>
-                        <div class="item-meta item-meta-author">
-                            <a href="<?= generateProfileURL($postUser->slug); ?>"><img
-                                    src="<?= getUserAvatar($postUser->avatar); ?>"
-                                    alt="<?= esc($postUser->username); ?>" width="32"
-                                    height="32"><span><?= esc($postUser->username); ?></span></a>
-                        </div>
-                        <?php endif;
-                        if ($generalSettings->show_post_date == 1): ?>
-                        <div class="item-meta item-meta-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                                class="bi bi-clock" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-                            </svg>
-                            <span><?= formatDateFront($post->created_at); ?>&nbsp;-&nbsp;<?= formatHour($post->created_at); ?></span>
-                        </div>
-                        <?php if (!empty($post->updated_at)): ?>
-                        <div class="item-meta item-meta-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                                class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path
-                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                <path fill-rule="evenodd"
-                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                            </svg>
-                            <span><?= formatDateFront($post->updated_at); ?>&nbsp;-&nbsp;<?= formatHour($post->updated_at); ?></span>
-                        </div>
-                        <?php endif;
-                        endif; ?>
-                        <div class="ms-auto item-meta item-meta-comment">
-                            <?php if ($generalSettings->comment_system == 1): ?>
-                            <span><i class="icon-comment"></i>&nbsp;<?= esc($post->comment_count); ?></span>
+                        <!-- default code -->
+                         <?php if ($generalSettings->show_post_author == 1): ?>
+                            <div class="item-meta item-meta-author">
+                                <a href="<?= generateProfileURL($postUser->slug); ?>"><img
+                                        src="<?= getUserAvatar($postUser->avatar); ?>"
+                                        alt="<?= esc($postUser->username); ?>" width="32"
+                                        height="32"><span><?= esc($postUser->username); ?></span></a>
+                            </div>
+                        <?php endif; ?>
+                            <!--<?php if ($generalSettings->show_post_date == 1): ?>
+                                <div class="item-meta item-meta-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                    </svg>
+                                    <span><?= formatDateFront($post->created_at); ?>&nbsp;-&nbsp;<?= formatHour($post->created_at); ?></span>
+                                </div>
+                            <?php if (!empty($post->updated_at)): ?>
+                                <div class="item-meta item-meta-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd"
+                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                    </svg>
+                                    <span><?= formatDateFront($post->updated_at); ?>&nbsp;-&nbsp;<?= formatHour($post->updated_at); ?></span>
+                                </div>
                             <?php endif;
-                            if ($generalSettings->show_hits): ?>
-                            <span> <i class="icon-eye"></i>&nbsp;<?= esc($post->pageviews); ?></span>
-                            <?php endif; ?>
+                        endif; ?> -->
+                        
+                        <!-- show createed_at or updated_at -->
+                        <?php if ($generalSettings->show_post_author == 1 && !empty($post->updated_at)):?>
+                            <div class="item-meta item-meta-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                </svg>
+                                <span><?= formatDateFront($post->updated_at); ?>&nbsp;-&nbsp;<?= formatHour($post->updated_at); ?></span>
+                            </div>
+                            <?php else: ?>
+                                <div class="item-meta item-meta-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                    </svg>
+                                    <span><?= formatDateFront($post->created_at); ?>&nbsp;-&nbsp;<?= formatHour($post->created_at); ?></span>
+                                </div>
+                            <?php endif;?>
+                            <!-- end show createed_at or updated_at -->
+                            <div class="ms-auto item-meta item-meta-comment">
+                                <?php if ($generalSettings->comment_system == 1): ?>
+                                <span><i class="icon-comment"></i>&nbsp;<?= esc($post->comment_count); ?></span>
+                                <?php endif;
+                                if ($generalSettings->show_hits): ?>
+                                <span> <i class="icon-eye"></i>&nbsp;<?= esc($post->pageviews); ?></span>
+                                <?php endif; ?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex post-share-buttons mb-4">
-                        <?= loadView('post/_post_share'); ?>
-                    </div>
+                        <div class="d-flex post-share-buttons mb-4">
+                            <?= loadView('post/_post_share'); ?>
+                        </div>
                     <?php if ($post->post_type == 'video'):
                         echo loadView('post/details/_video', ['post' => $post]);
                     elseif ($post->post_type == 'audio'):
