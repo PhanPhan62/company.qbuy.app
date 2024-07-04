@@ -1,10 +1,11 @@
 <?= view('common/_json_ld'); ?>
 <footer id="footer">
-    <!-- style static in HTML -->
+    <!-- style static in HTML1 -->
     <div class="footer-inner" style="padding: 30px 0">
         <div class="container-xl">
             <div class="row justify-content-between">
-                <div class="col-sm-12 col-md-6 col-lg-4 footer-widget footer-widget-about">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-4 footer-widget footer-widget-about"> -->
+                <div class="col-sm-12 col-md-6 col-lg-6 footer-widget footer-widget-about">
                     <div class="footer-logo">
                         <img src="<?= getLogoFooter(); ?>" alt="logo" class="logo" width="240" height="90">
                     </div>
@@ -14,7 +15,8 @@
                         ?>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-4 footer-widget"> -->
+                <div class="col-sm-12 col-md-6 col-lg-6 footer-widget">
                     <h4 class="widget-title"><?= trans("most_viewed_posts"); ?></h4>
                     <div class="footer-posts">
                         <?php $mostViewedPosts = getMostViewedPosts(3);
@@ -25,7 +27,7 @@
                             endif; ?>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
                     <?php if ($generalSettings->newsletter_status == 1): ?>
                     <h4 class="widget-title"><?= trans("newsletter"); ?></h4>
                     <div class="newsletter">
@@ -49,7 +51,7 @@
                             <?= view('common/_social_media_links', ['rssHide' => false]); ?>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

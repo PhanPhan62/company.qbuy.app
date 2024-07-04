@@ -330,18 +330,18 @@
 
 </div>
 <!-- dịch vụ -->
-<div class="container-xl section-content relative" style="margin-top: 20px; display: none">
+<!-- <div class="container-xl section-content relative" style="margin-top: 20px; display: none">
     <?php 
-        $number=61;
-        $category = getCategoryByID($number);
-        $categories = getByParentId($number);
+        // $number=61;
+        // $category = getCategoryByID($number);
+        // $categories = getByParentId($number);
     ?>
-    <div class="row" id="row-service-<?php echo esc($category->id) ?>">
+    <div class="row" id="row-service">
         <div class="col small-12 large-12">
             <div class="col-inner text-center">
-                <h1><?= esc($category->name) ?></h1>
+                <h1><?php //<?= esc($category->name) ?>?></h1>
                 <p>
-                    <span style="color: #777"><?= esc($category->description) ?></span>
+                    <span style="color: #777"><?php //<?= esc($category->description) ?> ?></span>
                 </p>
                 <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_263776288">
                     <div class="img-inner dark">
@@ -362,19 +362,19 @@
             </div>
         </div>
     </div>
-    <div class="row row-small align-equal align-center position-relative" id="row-image-<?php echo esc($category->id) ?>">
-    <?php foreach($categories as $item): ?>
+    <div class="row row-small align-equal align-center position-relative" id="row-image-1">
+    <?php //foreach($categories as $item): ?>
         <div class="col col-12 col-md-4 medium-4 small-6 large-4 service mt-4">
             <div class="col-inner text-center dark position-relative"
-                style="background-color: <?php echo esc($item->color); ?>;padding:50px 0px 50px 0px">
-                <a class="plain" href="<?= esc($category->name_slug) ?>/<?php echo esc($item->name_slug); ?>"
+                style="background-color: <?php //echo esc($item->color); ?>;padding:50px 0px 50px 0px">
+                <a class="plain" href="<?php //<?= esc($category->name_slug) ?>?>/<?php //echo esc($item->name_slug); ?>"
                     target="_self">
                     <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
                         
                         <div class="icon-box-text last-reset">
 
-                            <h3 class="title-service" style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
-                            <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none"><?php echo esc($item->description); ?></p>
+                            <h3 class="title-service" style="text-align: center; color: #fff"><?php //echo esc($item->name); ?></h3>
+                            <p class="content-service mb-3" style="color: #fff; padding: 5px; font-size: 20px; line-height: 25px; text-transform: none"><?php //echo esc($item->description); ?></p>
                         </div>
                 
                         <style scope="scope">
@@ -404,10 +404,10 @@
                 </a>
             </div>
         </div>
-        <?php endforeach; ?>
+        <?php //endforeach; ?>
     </div>
     <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
-</div>
+</div> -->
 
 <div class="container-xl section-content relative" style="margin-top: 20px;">
     <div class="row" id="row-service-9">
@@ -442,7 +442,7 @@
         }
     </style>
 
-    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
+    <div class="row row-small align-equal align-center" id="row-image-1">
         <div class="col col-12 col-md-4 medium-4 small-6 large-4 service" style="max-height: 300px; min-height:300px; height:300px ">
             <div class="col-inner text-center dark position-relative"
                 style="background-color: #008000; padding:30px 0px; min-height: 300px">

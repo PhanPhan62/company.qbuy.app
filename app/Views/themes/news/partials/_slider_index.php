@@ -195,14 +195,14 @@
 </div>
 
 <!-- dịch vụ -->
-<div class="container-xl section-content relative" style="margin-top: 20px;">
+<!-- <div class="container-xl section-content relative" style="margin-top: 20px;">
     <?php 
-        $number=75;
-        $category = getCategoryByID($number);
-        $categories = getByParentId($number);
+        // $number=75;
+        // $category = getCategoryByID($number);
+        // $categories = getByParentId($number);
     ?>
-    <!-- <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div> -->
-    <div class="row" id="row-service-<?php echo esc($category->id) ?>">
+    <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
+    <div class="row" id="row-service-<?php // echo esc($category->id) ?>">
         <div class="col small-12 large-12">
             <div class="col-inner text-center">
                 <h1><?= esc($category->name) ?></h1>
@@ -227,21 +227,21 @@
             </div>
         </div>
     </div>
-    <div class="row row-small align-equal align-center" id="row-image-<?php echo esc($category->id) ?>">
-    <?php foreach($categories as $item): ?>
+    <div class="row row-small align-equal align-center" id="row-image-<?php // echo esc($category->id) ?>">
+    <?php // foreach($categories as $item): ?>
         <div class="col col-12 col-md-4 medium-4 small-6 large-4 service">
             <div class="col-inner text-center dark"
-                style="background-color: <?php echo esc($item->color); ?>;padding:50px 0px 50px 0px">
-                <a class="plain" href="<?= esc($category->name_slug) ?>/<?php echo esc($item->name_slug); ?>"
+                style="background-color: <?php // echo esc($item->color); ?>;padding:50px 0px 50px 0px">
+                <a class="plain" href="<?php //<?= esc($category->name_slug) ?>?>/<?php // echo esc($item->name_slug); ?>"
                     target="_self">
                     <div class="icon-box featured-box icon-box-center text-center" style="margin:0px 0px 0px 0px;">
                         
                         <div class="icon-box-text last-reset">
 
-                            <h3 style="text-align: center; color: #fff"><?php echo esc($item->name); ?></h3>
-                            <p style="color: #fff; padding: 5px"><?php echo esc($item->description); ?></p>
+                            <h3 style="text-align: center; color: #fff"><?php // echo esc($item->name); ?></h3>
+                            <p style="color: #fff; padding: 5px"><?php // echo esc($item->description); ?></p>
                         </div>
-                        <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+                        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
                         
 
                         <style scope="scope">
@@ -272,10 +272,10 @@
                 </a>
             </div>
         </div>
-        <?php endforeach; ?>
+        <?php // endforeach; ?>
     </div>
     <div class="gap-element clearfix" style="display:block; height:auto; padding-top:50px"></div>
-</div>
+</div> -->
 
 <!-- Giấy phép kinh doanh -->
 <div class="container-xl">
