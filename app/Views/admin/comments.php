@@ -39,7 +39,7 @@
                                     <td style="text-align: center !important;"><input type="checkbox" name="checkbox-table" class="checkbox-table" value="<?= $item->id; ?>"></td>
                                     <td><?= esc($item->id); ?></td>
                                     <td><?= esc($item->name); ?><br><?= esc($item->email); ?></td>
-                                    <td class="break-word"><?= esc($item->comment); ?></td>
+                                    <td class="break-word1"><?= esc($item->comment); ?></td>
                                     <td>
                                         <?php $baseURL = generateBaseURLByLangId($item->post_lang_id); ?>
                                         <a href="<?= $baseURL . $item->post_slug; ?>" target="_blank"><?= esc($item->post_title); ?></a>

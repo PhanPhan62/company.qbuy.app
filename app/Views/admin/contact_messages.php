@@ -33,7 +33,7 @@
                                     <td><?= esc($item->id); ?></td>
                                     <td><?= esc($item->name); ?></td>
                                     <td><?= esc($item->email); ?></td>
-                                    <td class="break-word"><?= esc($item->message); ?></td>
+                                    <td class="break-word1"><?= esc($item->message); ?></td>
                                     <td><?= formatDate($item->created_at); ?></td>
                                     <td class="td-select-option">
                                         <div class="dropdown">

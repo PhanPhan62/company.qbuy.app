@@ -35,7 +35,7 @@
                                     foreach ($polls as $item): ?>
                                         <tr>
                                             <td><?= esc($item->id); ?></td>
-                                            <td class="break-word"><?= esc($item->question); ?>&nbsp;&nbsp;&nbsp;
+                                            <td class="break-word1"><?= esc($item->question); ?>&nbsp;&nbsp;&nbsp;
                                                 <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#pollModal<?= esc($item->id); ?>"><?= trans('view_results'); ?></button>
                                             </td>
                                             <td>

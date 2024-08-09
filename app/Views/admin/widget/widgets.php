@@ -37,7 +37,7 @@
                                     foreach ($widgets as $item): ?>
                                         <tr>
                                             <td><?= esc($item->id); ?></td>
-                                            <td class="break-word"><?= esc($item->title); ?></td>
+                                            <td class="break-word1"><?= esc($item->title); ?></td>
                                             <td>
                                                 <?php $lang = getLanguage($item->lang_id);
                                                 if (!empty($lang)) {

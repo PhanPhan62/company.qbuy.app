@@ -393,7 +393,7 @@ class HomeController extends BaseController
     {
         $val = \Config\Services::validation();
         $val->setRule('name', trans("name"), 'required|max_length[200]');
-        $val->setRule('email', trans("email"), 'required|valid_email|max_length[200]');
+        $val->setRule('email', 'SDT'.trans("email"), 'required|max_length[200]');
         $val->setRule('message', trans("message"), 'required|max_length[5000]');
         if (!$this->validate(getValRules($val))) {
             $this->session->setFlashdata('errors', $val->getErrors());

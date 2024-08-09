@@ -329,7 +329,7 @@ if (!function_exists('formatAbouteFooter')) {
     {
         $parts = explode('|', $str);
         foreach ($parts as $part) {
-            echo  "<br>" . trim($part);
+            echo "<br>" . trim($part);
         }
     }
 }
@@ -1892,7 +1892,7 @@ if (!function_exists('getRecommendedPosts')) {
     {
         $recommendedPosts = getCachedData('recommended_posts');
         if (empty($recommendedPosts)) {
-            $model = new  \App\Models\PostModel();
+            $model = new \App\Models\PostModel();
             $recommendedPosts = $model->getRecommendedPosts();
             setCacheData('recommended_posts', $recommendedPosts);
         }
@@ -1907,7 +1907,7 @@ if (!function_exists('getLatestPosts')) {
         $key = 'latest_posts_' . $limit;
         $posts = getCachedData($key);
         if (empty($posts)) {
-            $model = new  \App\Models\PostModel();
+            $model = new \App\Models\PostModel();
             $posts = $model->getLatestPosts($limit);
             setCacheData($key, $posts);
         }
@@ -1922,7 +1922,7 @@ if (!function_exists('getMostViewedPosts')) {
         $key = 'most_viewed_posts_' . $limit;
         $posts = getCachedData($key);
         if (empty($posts)) {
-            $model = new  \App\Models\PostModel();
+            $model = new \App\Models\PostModel();
             $posts = $model->getMostViewedPosts($limit);
             setCacheData($key, $posts);
         }
@@ -2213,7 +2213,8 @@ if (!function_exists('parseSerializedNameArray')) {
 if (!function_exists('isBot')) {
     function isBot()
     {
-        if (preg_match('/abacho|accona|AddThis|AdsBot|ahoy|AhrefsBot|AISearchBot|alexa|altavista|anthill|appie|applebot|arale|araneo|AraybOt|ariadne|arks|aspseek
+        if (
+            preg_match('/abacho|accona|AddThis|AdsBot|ahoy|AhrefsBot|AISearchBot|alexa|altavista|anthill|appie|applebot|arale|araneo|AraybOt|ariadne|arks|aspseek
             |ATN_Worldwide|Atomz|baiduspider|baidu|bbot|bingbot|bing|Bjaaland|BlackWidow|BotLink|bot|boxseabot|bspider|calif|CCBot|ChinaClaw|christcrawler|CMC\/0\.01|combine
             |confuzzledbot|contaxe|CoolBot|cosmos|crawler|crawlpaper|crawl|curl|cusco|cyberspyder|cydralspider|dataprovider|digger|DIIbot|DotBot|downloadexpress|DragonBot
             |DuckDuckBot|dwcp|EasouSpider|ebiness|ecollector|elfinbot|esculapio|ESI|esther|eStyle|Ezooms|facebookexternalhit|facebook|facebot|fastcrawler|FatBot|FDSE|FELIX IDE
@@ -2227,7 +2228,8 @@ if (!function_exists('isBot')) {
             |slurp|snooper|solbot|speedy|spider_monkey|SpiderBot\/1\.0|spiderline|spider|suke|tach_bw|TechBOT|TechnoratiSnoop|templeton|teoma|titin|topiclink|twitterbot|twitter|UdmSearch
             |Ukonline|UnwindFetchor|URL_Spider_SQL|urlck|urlresolver|Valkyrie libwww\-perl|verticrawl|Victoria|void\-bot|Voyager|VWbot_K|wapspider|WebBandit\/1\.0|webcatcher|WebCopier
             |WebFindBot|WebLeacher|WebMechanic|WebMoose|webquest|webreaper|webspider|webs|WebWalker|WebZip|wget|whowhere|winona|wlm|WOLP|woriobot|WWWC|XGET|xing|yahoo|YandexBot|YandexMobileBot
-            |yandex|yeti|Zeus/i', $_SERVER['HTTP_USER_AGENT'])) {
+            |yandex|yeti|Zeus/i', $_SERVER['HTTP_USER_AGENT'])
+        ) {
             return true;
         }
         return false;
@@ -2250,7 +2252,86 @@ if (!function_exists('urlInWeb')) {
 if (!function_exists('showInHome')) {
     function showInHome($album_id)
     {
+
+        return 1;
+    }
+}
+
+
+if (!function_exists('urlInWeb')) {
+    function urlInWeb()
+    {
+        // // Lấy giao thức (http hoặc https)
+        // $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        // // Lấy tên miền
+        $host = $_SERVER['HTTP_HOST'];
+        // // Lấy đường dẫn (path) của URL
+        // $uri = $_SERVER['REQUEST_URI'];
+        // // Ghép các phần lại để có URL đầy đủ
+        // $url = $protocol . $host . $uri;
+        return $host;
+    }
+}
+
+if (!function_exists('is_Email_Customer')) {
+    function is_Email_Customer($string_contact)
+    {
+        // Xóa tất cả các ký tự không phải số khỏi chuỗi số điện thoại
+        $cleaned_number = preg_replace('/\D/', '', $string_contact);
         
-       return 1;
+        // Kiểm tra nếu chuỗi là email
+        if (strpos(esc($string_contact), '@')) {
+            // Tạo liên kết gửi email
+            // return '<a href="https://mail.google.com/mail/?view=cm&fs=1&to=' . esc($string_contact) . '&su=' . urlencode(trans('help_customer') . ' ' . urlInWeb()) . '&body=' . urlencode(trans('help_content_contact1')) . '" target="_blank">' . esc($string_contact) . '</a>';
+            return '<a href="https://mail.google.com/mail/?view=cm&fs=1&to=' . esc($string_contact) . '&su=' . urlencode(trans('help_customer') ) . '&body=' . urlencode(trans('help_content_contact1')) . '" target="_blank">' . esc($string_contact) . '</a>';
+        } else {
+            if (strlen(esc($string_contact)) > 13){
+                return '<span class="text-red band-select" style=" cursor: no-drop;">
+                            '.trans('err_not_valid').'
+                        </span>
+                        ';
+            }else{
+                return $cleaned_number
+                    ? '<a href="tel:' . esc($cleaned_number) . '">' . preg_replace('/(\d{3})(\d{3})(\d{4})/', '$1 $2 $3', $cleaned_number) . '</a>'
+                    : esc($string_contact);
+            }
+        }
+    }
+}
+if (!function_exists('truncateString')) {
+
+    function truncateString($string, $limit, $break=" ", $pad="...") {
+        // Nếu chuỗi dài hơn giới hạn
+        if (strlen($string) > $limit) {
+            // Cắt chuỗi ở điểm giới hạn
+            $string = substr($string, 0, $limit);
+            // Tìm vị trí của dấu ngắt cuối cùng trong chuỗi đã cắt
+            $breakpoint = strrpos($string, $break);
+            // Nếu vị trí của dấu ngắt là trong phạm vi hợp lý
+            if ($breakpoint !== false) {
+                $string = substr($string, 0, $breakpoint);
+            }
+            // Thêm dấu ba chấm
+            $string .= $pad;
+        }
+        return $string;
+    }
+}
+
+if (!function_exists('getCurrentDateInVietnam')) {
+    function getCurrentDateInVietnam()
+    {
+        date_default_timezone_set('Asia/Ho_Chi_Minh');
+        $date = new DateTime();
+        $dayNames = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+        $dayOfWeek = $dayNames[$date->format('w')];
+        $formattedDate = $dayOfWeek . ', ' . $date->format('j/n/Y');
+
+        return $formattedDate;
+    }
+}
+if (!function_exists('getRandomNumber')) {
+    function getRandomNumber($min = 1, $max = 999) {
+        return rand($min, $max);
     }
 }
